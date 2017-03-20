@@ -1,0 +1,38 @@
+categories:
+    Фитнес за мъже:
+      - Мъжки дневници
+      - Тренировки и упражнения
+      - Общи теми – фитнес за мъже
+      - man-placeholder
+    Фитнес за жени:
+      - Дамски дневници
+      - Тренировки и упражнения
+      - Общи теми – фитнес за жени
+      - woman-placeholder
+    Хранене:
+      - Покачване на тегло
+      - Отслабване
+      - Продукти
+      - carrot
+
+activity:
+  Петър:
+    topic: Дневникът на Петър
+    avatar: /assets/toolkit/images/petar.jpg
+  Тони Стоев:
+    topic: Дневник
+    avatar: /assets/toolkit/images/tony.jpg
+  Ice Mountain:
+    topic: Лаф моабет - девета серия
+    avatar: /assets/toolkit/images/ice.jpg
+  Вероника Налбатска:
+    topic: Дневникът на V :] ( тежко-средно-леко )
+    avatar: /assets/toolkit/images/veronika.jpg
+  Dydo:
+    topic: THE RISE OF COBRA
+    avatar: /assets/toolkit/images/dydo.jpg
+  Dymag:
+    topic: Лаф моабет - девета серия
+    avatar: /assets/toolkit/images/dymag.jpg
+  fat cat:
+    topic: Изчезнали hardcore продукти

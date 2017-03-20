@@ -1,0 +1,9 @@
+---
+notes: This is a general type of card. It could be filled with all sorts of content, but works best with images and text. The example uses the anchor tag, making the whole card a link. It can also work with a div.
+---
+
+<a href="#" class="flex flex-wrap w-100 bg-fff ph3 pt3 pb2 br1 overflow-hidden shadow states-shadow relative {{#if class}}{{class}}{{/if}}">
+  {{#if labelText}}{{> label labelText=labelText class="mb2 left--1" }}{{/if}}
+    <img src="{{#if image}}{{image}}{{else}}{{baseurl}}/assets/toolkit/images/ghost-image.svg{{/if}}" alt="" class="db w-100 mb3" {{#if width}}width="{{width}}"{{/if}} />
+    <h1 class="dib center lh-title f5 fw6 mb2">{{#if heading}}{{heading}}{{else}}Заглавие на съдържанието{{/if}}</h1>
+</a>

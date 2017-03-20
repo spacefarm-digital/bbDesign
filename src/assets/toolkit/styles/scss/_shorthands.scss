@@ -1,0 +1,13 @@
+.card {
+  @extend .bg-fff;
+  @extend .br1;
+  @extend .pa3;
+  @extend .shadow;
+}
+
+.container {
+  @extend .ph3;
+  @extend .center;
+  @extend .mw8;
+  @extend .relative;
+}

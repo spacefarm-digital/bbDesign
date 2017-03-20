@@ -1,0 +1,35 @@
+<footer class="bg-light-green pv4">
+  <div class="container">
+    <div class="tc mb3">
+      <div class="center dark-green mb1">
+        {{> icon svg="bb-hex" class="w4 h4"}}
+      </div>
+      <p class="f4 dark-green b">Be Better</p>
+    </div>
+
+    <div class="row mw8 center mb3">
+      {{#each footerContent.links}}
+        <div class="mb3 f6-lg col-12 col-sm-6 col-md-3">
+          <a href="#"><h1 class="f4 f5-lg b dark-green mb1 arrow-dark-green">{{@key}}</h1></a>
+          <ul class="fw5">
+            {{#each this}}
+              <li><a href="#" class="states-opacity">{{this}}</a></li>
+            {{/each}}
+          </ul>
+        </div>
+      {{/each}}
+    </div>
+
+    <div class="mhn1 tc mb3">
+      <p class="mb2 fw6">
+        Последвай ни в:
+      </p>
+      {{> share-block }}
+    </div>
+
+    <p class="f6 tc-sm">
+      1999 - 2016 "ББ-Тийм" ЕООД / <a href="#" class="states-opacity fw5">Условия за ползване</a>
+    </p>
+
+  </div>
+</footer>

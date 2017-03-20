@@ -1,0 +1,54 @@
+{{> navbar class="js-nav fixed top-0" }}
+<!-- Container -->
+<div class="container row compensate-nav">
+
+  <!-- General food info -->
+  <div class="mb3 w-100 col-md-6">
+
+<div class="mr3-lg sticky-lg top-2-lg mb3-lg">
+  <!-- Food image -->
+  <div class="fl-md mb3">
+    <img src="{{baseurl}}{{brocolli.img}}" alt="" class="mw5 pr2-md center db" />
+  </div>
+
+  <!-- Food name -->
+  {{> page-title text=brocolli.name }}
+
+  <!-- Food variant -->
+  <h2 class="f4 lh-solid fw7 grey-3 mb3 db">{{brocolli.type}}</h2>
+
+  <!-- Food stats -->
+  <div class="flex flex-wrap w-100">
+    <p class="f5 fw4 mb2 w-100"><span class="b">100 гр.</span> съдържат:</p>
+    <ul class="lh-solid flex flex-wrap w-100">
+      <li class="w-50 w-auto-sm w-50-md w-auto-md mb3 mr4-sm mr0-md mr4-md"><span class="f3 fw6 green mb1 db">{{brocolli.calories}}</span> калории</li>
+      <li class="w-50 w-auto-sm w-50-md w-auto-md mb3 mr4-sm mr0-md mr4-md"><span class="f3 fw6 green mb1 db">{{brocolli.protein}} г</span> протеин</li>
+      <li class="w-50 w-auto-sm w-50-md w-auto-md mb3 mr4-sm mr0-md mr4-md"><span class="f3 fw6 green mb1 db">{{brocolli.carbs}} г</span> въглехидрати</li>
+      <li class="w-50 w-auto-sm w-50-md w-auto-md mb3 mr4-sm mr0-md mr4-md"><span class="f3 fw6 green mb1 db">{{brocolli.fat}} г</span> мазнини</li>
+    </ul>
+  </div>
+</div>
+  </div>
+
+  <!-- Macros -->
+  <div class="mb3 w-100 col-md-6">
+    {{#each brocolli.macros}}
+    <div class="bg-fff shadow br1 pt3 mb2">
+      <h1 class="f3 lh-solid b ttc mb3 ph3">{{@key}}</h1>
+      <table summary="{{@key}}" class="w-100 f6-md">
+        <tbody>
+          {{# each this }}
+          <tr class="states-bg">
+            <td class="fw6">{{@key}}</td>
+            <td class="nowrap">{{this}}</td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+    {{/each}}
+  </div>
+
+
+</div>
+{{> footer }}

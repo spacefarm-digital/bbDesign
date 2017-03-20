@@ -1,0 +1,44 @@
+---
+notes: Includes a small JS snippet showcasing liked and non-liked states. Add
+the class "green" to indicate the user has liked this particular post.
+---
+
+<div class="flex items-center relative">
+  <!-- Like button -->
+  {{> icon-only-button svg="forum-recommend" class="grey-3 js-like-button"}}
+
+
+  <!-- Like counter -->
+  <button class="js-like-counter f5 states-opacity hover-transition fw6 grey-3 pointer ph3 pv2 pv1-lg down-self">1</button>
+
+  <!-- Users who liked this post -->
+  <ul class="js-like-users ph3 mb2 pt3 pb2 br1 absolute z-3 bottom-100 bg-fff shadow left-0 mw6 flex flex-wrap down-self animation-transition">
+    {{# iterate 10}}
+    <li class="ph1 mb2">
+      {{> avatar class="w2 h2"}}
+    </li>
+    {{/iterate}} {{# iterate 10}}
+    <li class="ph1 mb2">
+      {{> generated-avatar }}
+    </li>
+    {{/iterate}}
+  </ul>
+</div>
+
+<script>
+  const likeButton = document.querySelector(".js-like-button");
+  const likeCounter = document.querySelector(".js-like-counter");
+  const likeUsers = document.querySelector(".js-like-users");
+
+  likeButton.onclick = function () {
+    event.preventDefault();
+    this.classList.add("bg-green", "fff", "states-opacity");
+    this.classList.remove("grey-3", "states-bg");
+    likeCounter.classList.remove("down-self");
+  };
+
+  likeCounter.onclick = function () {
+    likeUsers.classList.toggle("down-self");
+  };
+
+</script>

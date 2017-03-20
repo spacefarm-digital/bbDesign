@@ -1,0 +1,66 @@
+.toggle {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px; padding: 0; border: 0;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.toggle + label {
+  position: relative;
+  padding-left: calc(64px + .75rem);
+  line-height: 36px;
+  @extend .dib;
+  @extend .pointer;
+}
+
+.toggle + label:before {
+  content: '';
+  @extend .bg-fff;
+  width: 64px;
+  @extend .h-36px;
+  border-radius: 36px;
+  @extend .absolute;
+  @extend .top-0;
+  @extend .left-0;
+  @extend .grey-1;
+  @extend .bg-grey-1;
+  @extend .tc;
+  @extend .b--solid;
+  @extend .bw1;
+  @extend .animation-transition;
+}
+/* checked mark aspect */
+.toggle + label:after {
+  content: '';
+  @extend .absolute;
+  @extend .left-0;
+  @extend .top-0;
+  @extend .w-36px;
+  @extend .h-36px;
+  @extend .br-100;
+  @extend .bg-fff;
+  @extend .animation-transition;
+  @extend .b--solid;
+  @extend .grey-1;
+  @extend .bw1;
+}
+
+// Checked
+.toggle:checked + label:after {
+  transform: translateX(28px) translateZ(0);
+  transition: $animation-transition;
+  transition-delay: .15s;
+  -webkit-transition-delay: .15s;
+  @extend .green;
+}
+
+.toggle:checked + label:before {
+  border-width: 18px;
+  @extend .green;
+}
+
+.toggle:disabled {
+  opacity: .1;
+}

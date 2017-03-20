@@ -1,0 +1,22 @@
+  .cover { background-size: cover; }
+  .contain { background-size: contain; }
+
+@include sm {
+  .cover-sm { background-size: cover; }
+  .contain-sm { background-size: contain; }
+}
+
+@include md {
+  .cover-md { background-size: cover; }
+  .contain-md { background-size: contain; }
+}
+
+@include lg {
+  .cover-lg { background-size: cover; }
+  .contain-lg { background-size: contain; }
+}
+
+@include xl {
+  .cover-xl { background-size: cover; }
+  .contain-xl { background-size: contain; }
+}

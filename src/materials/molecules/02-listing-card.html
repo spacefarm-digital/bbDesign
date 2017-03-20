@@ -1,0 +1,16 @@
+---
+notes: Use this withing a listing context. In most cases, the presence of unordered or orederd lists in the HTML should be a clear indicator.
+---
+
+<div class="shadow bg-fff br1 overflow-hidden states-shadow {{#if class}}{{class}}{{/if}}">
+
+  <h2 class="f3 fw6 lh-title db pa3">Заглавие</h2>
+
+  <ul>
+    {{#iterate 3}}
+    <li>
+      <a href="#" class="states-bg w-100 db ph3 pv2 fw5">Време за работа</a>
+    </li>
+    {{/iterate}}
+  </ul>
+</div>

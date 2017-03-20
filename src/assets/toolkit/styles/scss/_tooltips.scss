@@ -1,0 +1,78 @@
+.tooltip {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+
+	&:before, &:after {
+		@extend .absolute;
+		transform: translateZ(0);
+		visibility: hidden;
+		@extend .o-0;
+		@extend .z-9999;
+		pointer-events: none;
+		transition: $hover-transition;
+	}
+
+	&:hover:before, &:hover:after {
+		visibility: visible;
+		opacity: 1;
+	}
+
+// Body
+	&:after {
+		background: $midnight;
+		@extend .fff;
+		@extend .fw6;
+		@extend .f6;
+		@extend .nowrap;
+		@extend .br1;
+		@extend .shadow;
+		padding: .375rem .75rem;
+	}
+	&[aria-label]:after {
+		content: attr(aria-label); // The magic!
+	}
+}
+
+// Hide tooltips if any of the supported attributes is empty.
+[aria-label=''] {
+	&:before, &:after {
+		display: none !important;
+	}
+}
+
+.tooltip--top {
+	&:after {
+		bottom: 100%;
+		margin-bottom: .5rem;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.tooltip--bottom {
+	&:after {
+		top: 100%;
+		margin-top: .5rem;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.tooltip--left {
+	&:after {
+		right: 100%;
+		margin-right: .5rem;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+.tooltip--right {
+	&:after {
+		left: 100%;
+		margin-left: .5rem;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}

@@ -1,0 +1,15 @@
+  .i         { font-style: italic; }
+  .fs-normal { font-style: normal; }
+
+small
+{
+  font-size: .75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+mark
+{
+  background-color: $highlight-green;
+  color: #000;
+}

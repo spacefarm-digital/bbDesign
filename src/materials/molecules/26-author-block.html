@@ -1,0 +1,20 @@
+---
+notes: Used only at the beggining of a publication.
+---
+
+<div class="flex justify-between f6 lh-title mw6{{#if class}} {{class}}{{/if}}">
+  <div class="flex">
+    {{> avatar class="w2 h2 mr2"}}
+
+    <div>
+      <a href="#" class="ma0 states-opacity fw5">{{#if name}}{{name}}{{else}}Име на автор{{/if}}</a>
+      <p class="ma0 grey-3">Четиво за около
+        {{#if minutes}}{{minutes}}{{else}}n{{/if}} минути</p>
+    </div>
+  </div>
+
+  <a href="#" class="icon grey-3 db tooltip tooltip--left" aria-label="Прочети по-късно">
+    {{> icon svg="read-later"}}
+  </a>
+
+</div>

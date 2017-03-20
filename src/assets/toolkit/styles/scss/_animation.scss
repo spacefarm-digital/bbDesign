@@ -1,0 +1,68 @@
+.fade-0 {
+  opacity: 0;
+  pointer-events: none;
+  transition: $animation-transition;
+}
+
+.fade-100 {
+  opacity: 100;
+  pointer-events: all;
+  transition: $animation-transition;
+}
+
+.up-1rem {
+  transition: $animation-transition;
+  transform: translateY(-1rem) translateZ(0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.down-1rem {
+  transition: $animation-transition;
+  transform: translateY(1rem) translateZ(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.up-self {
+  transition: $animation-transition;
+  transform: translateY(-100%) translateZ(0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.down-self {
+  transition: $animation-transition;
+  transform: translateY(100%) translateZ(0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.left-self {
+  transition: $animation-transition;
+  transform: translateX(-100%) translateZ(0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.right-self {
+  transition: $animation-transition;
+  transform: translateX(100%) translateZ(0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.scale-0 {
+  transform: scale(0) translateZ(0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+@include lg {
+  .left-self-lg {
+    transform: translateX(-100%) translateZ(0);
+  }
+  .left-90-lg {
+    transform: translateX(-90%) translateZ(0);
+  }
+}

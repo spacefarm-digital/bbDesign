@@ -1,0 +1,15 @@
+---
+notes: Refer to the Modal demo page.
+---
+
+<div class="shadow br1 bg-fff mw6 pa3 overflow-hidden remodal" data-remodal-id="modal">
+  <a href="#" data-remodal-action="close" class="grey-2 br-100 fr states-opacity">
+    {{> icon svg="cross" width="24" height="24"}}
+  </a>
+  <h1 class="f4 db tc mh1 lh-title lh-solid-md mb3 cb cn-md">{{#if heading}}{{heading}}{{else}}Заглавие на модал{{/if}}</h1>
+  {{> paragraph class="mb3" text="Текст на модала. Искаш ли да продължиш? Малко по-дълъг тек" }}
+  <div class="flex justify-end">
+    {{> ghost-button text="Затвори" class="mr2" attr="data-remodal-action='cancel'"}}
+    {{> button text="Потвърди" attr="data-remodal-action='confirm'"}}
+  </div>
+</div>

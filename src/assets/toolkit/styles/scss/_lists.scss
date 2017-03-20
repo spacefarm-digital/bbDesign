@@ -1,0 +1,56 @@
+.list {         list-style-type: none; }
+
+.ul .ul, .ol .ol {
+  padding-left: .5rem;
+}
+
+.ul
+{
+  margin-left: 1.5rem;
+  li {
+    position: relative;
+  }
+  li:before
+  {
+
+      content: '●';
+
+      left: -1.5rem;
+
+      position: absolute;
+
+      color: $text-green;
+  }
+}
+
+.ol
+{
+
+    list-style: none;
+
+    margin-left: 1rem;
+
+    counter-reset: i 0;
+    ol
+    {
+        margin-left: 1rem;
+    }
+    li {
+      position: relative;
+    }
+}
+
+.ol li:before
+{
+    font-weight: bold;
+
+    left: -1rem;
+
+    position: absolute;
+
+    height: 100%;
+
+    content: counter(i);
+    counter-increment: i;
+    color: $text-green;
+}

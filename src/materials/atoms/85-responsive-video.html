@@ -1,0 +1,7 @@
+---
+notes: Use <em>.aspect-ratio--16x9</em> for 16x9 video. Use the same naming convention for 4x3 and 8x5.
+---
+
+<div class="aspect-ratio aspect-ratio--{{#if aspect-ratio}}{{aspect-ratio}}{{else}}16x9{{/if}}">
+  <iframe src="{{#if embed}}{{embed}}{{else}}https://www.youtube.com/embed/pDxn0Xfqkgw{{/if}}" frameborder="0" allowfullscreen class="aspect-ratio--object"></iframe>
+</div>

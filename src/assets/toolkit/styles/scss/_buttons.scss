@@ -1,0 +1,33 @@
+.btn {
+  font-size: 1rem;
+  padding: .375rem .75rem;
+  cursor: pointer;
+  letter-spacing: 0.0375rem;
+  border-radius: .375rem;
+  color: #fff;
+  border: 2px solid;
+  @extend .no-underline;
+  @extend .fw6;
+  transition: $hover-transition;
+  @extend .tc;
+  @extend .lh-copy;
+  @extend .nowrap;
+}
+
+.ghost-btn {
+  background-color: transparent;
+  @include lg {
+    &:hover {
+      opacity: .75;
+    }
+  }
+  &:active {
+    background-color: #fff !important;
+    opacity: 1;
+  }
+}
+
+button:disabled {
+  opacity: .7;
+  cursor: not-allowed;
+}

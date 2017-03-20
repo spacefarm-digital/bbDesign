@@ -1,0 +1,15 @@
+---
+fabricator: true
+---
+
+<h1 data-f-toggle="labels" class="f1 mb1 b">Templates</h1>
+
+<ul>
+{{#each views.templates.items}}
+
+	<li>
+		<a href="templates/{{@key}}.html" target="_blank">{{name}}</a>
+	</li>
+
+{{/each}}
+</ul>

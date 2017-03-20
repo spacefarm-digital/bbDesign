@@ -1,0 +1,42 @@
+.static { position: static; }
+.relative  { position: relative; }
+.absolute  { position: absolute; }
+.fixed  { position: fixed; }
+// Experimental
+.sticky { position: sticky; }
+
+@include sm {
+  .static-sm { position: static; }
+  .relative-sm  { position: relative; }
+  .absolute-sm  { position: absolute; }
+  .fixed-sm  { position: fixed; }
+  // Experimental
+  .sticky-sm { position: sticky; }
+}
+
+@include md {
+  .static-md { position: static; }
+  .relative-md  { position: relative; }
+  .absolute-md  { position: absolute; }
+  .fixed-md  { position: fixed; }
+  // Experimental
+  .sticky-md { position: sticky; }
+}
+
+@include lg {
+  .static-lg { position: static; }
+  .relative-lg  { position: relative; }
+  .absolute-lg  { position: absolute; }
+  .fixed-lg  { position: fixed; }
+  // Experimental
+  .sticky-lg { position: sticky; }
+}
+
+@include xl {
+  .static-xl { position: static; }
+  .relative-xl  { position: relative; }
+  .absolute-xl  { position: absolute; }
+  .fixed-xl  { position: fixed; }
+  // Experimental
+  .sticky-xl { position: sticky; }
+}

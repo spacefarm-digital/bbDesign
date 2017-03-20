@@ -1,0 +1,28 @@
+---
+notes: Call with a "color" variable to change color and "text" variable to change text. Defaults to green and "Бутон". 	&#10; ❗️ This is a showcase of the interaction. It contains prototype JS that starts on click but returns to the button's original state 2s later. Make sure the setTimeout() event is replaced by a a successfull POST request or whatever form submission techni1que is used.
+---
+
+<button class="js-progress-button btn relative states-opacity mw6 bg-{{#if color}}{{color}} b-{{color}}{{else}}green b-green{{/if}} {{#if class}}{{class}}{{/if}}" {{#if attr}}{{{attr}}}{{/if}}>
+  <!-- Spinner -->
+  {{> spinner class="js-progress-button-spinner db w1 h1 absolute absolute-center hover-transition down-self" color="#fff" }}
+  <!-- Button Text -->
+  {{#if text}}{{text}}{{else}}<span class="js-progress-button-text db hover-transition">Бутон</span>{{/if}}
+</button>
+
+<script>
+  const progressButton = document.querySelector(".js-progress-button");
+  const progressButtonText = document.querySelector(".js-progress-button .js-progress-button-text");
+  const progressButtonSpinner = document.querySelector(".js-progress-button .js-progress-button-spinner");
+
+  progressButton.onclick = function() {
+    event.preventDefault();
+    this.setAttribute("disabled", "true");
+    progressButtonText.classList.add("o-0");
+    progressButtonSpinner.classList.remove("down-self");
+    setTimeout(() => {
+      this.removeAttribute("disabled");
+      progressButtonText.classList.remove("o-0");
+      progressButtonSpinner.classList.add("down-self");
+     }, 2000);
+  };
+</script>

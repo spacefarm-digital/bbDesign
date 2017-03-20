@@ -1,0 +1,23 @@
+{{> navbar class="js-nav fixed top-0"}}
+<div class="container compensate-nav">
+  {{> featured-card }}
+  <div class="row mb3">
+    {{# iterate 9}}
+    <div class="flex col-12 col-md-6 col-xl-4">
+      {{> full-width-card class="mb3 flex" }}
+    </div>
+    {{/iterate}}
+  </div>
+  <div class="row mb2">
+    <div class="flex col-12 col-md-6">
+      {{> subscribe-block class="mb3 w-100"}}
+    </div>
+    <div class="flex col-12 col-md-6">
+      {{> wizard class="mb3"}}
+    </div>
+  </div>
+
+  {{> swiper }}
+
+</div>
+{{> footer }}

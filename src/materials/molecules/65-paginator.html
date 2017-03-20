@@ -1,0 +1,18 @@
+---
+notes: Replace <em>.grey-2</em> with <em>.green</em> and add <em>.not-allowed-sm</em> for the curently active item. Use this for paginators with five pages or less.
+---
+
+<div class="inline-flex br1 overflow-hidden shadow states-shadow f6 tc lh-36px {{class}}">
+  <a href="#" class="pa2 pv1-sm bg-fff grey-2 states-bg fw7" title="Предишна страница">
+    {{> icon svg="left-arrow" class="icon"}}
+  </a>
+  <a href="#" class="pa2 ph3-sm pv1-sm bg-fff grey-2 states-bg fw7 dn db-sm">1</a>
+  <!-- Current -->
+  <p class="pa2 mb0 ph3-sm pv1-sm green bg-fff dib fw7 states-bg not-allowed-sm" title="Текуща страница"><span class="dn-sm">Страница </span>2 <span class="dn-sm">от 5</span></p>
+  <a href="#" class="pa2 ph3-sm pv1-sm bg-fff grey-2 states-bg fw7 dn db-sm">3</a>
+  <a href="#" class="pa2 ph3-sm pv1-sm bg-fff grey-2 states-bg fw7 dn db-sm">4</a>
+  <a href="#" class="pa2 ph3-sm pv1-sm bg-fff grey-2 states-bg fw7 dn db-sm">5</a>
+  <a href="#" class="pa2 pv1-sm bg-fff grey-2 states-bg fw7" title="Следваща страница">
+    {{> icon svg="right-arrow" class="icon"}}
+  </a>
+</div>

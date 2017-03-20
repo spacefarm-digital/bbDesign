@@ -1,0 +1,37 @@
+{{> navbar class="js-nav fixed top-0"}}
+<!-- Container -->
+<div class="container compensate-nav">
+
+  {{> page-title class="tc mb4 mt3"}}
+
+  <!-- Search -->
+  <div class="mw6 mb4 center">
+    {{> detached-search-bar }}
+  </div>
+
+  <!-- Sub-category with image -->
+  {{#iterate 2}}
+    <a href="#">{{> heading-2 text="Под-категория с изображение" class="mb3 arrow"}}</a>
+    <ul class="row mb4">
+      {{#iterate 10}}
+        <li class="col-12 col-sm-6 col-md-4 col-xl-3 flex relative">
+          {{> full-width-card class="mb3" }}
+        </li>
+      {{/iterate}}
+    </ul>
+  {{/iterate}}
+
+  <!-- Sub-category without image -->
+  {{#iterate 2}}
+    <a href="#">{{> heading-2 text="Под-категория без изображение" class="mb3 arrow"}}</a>
+    <ul class="mb4 row mhn1">
+      {{#iterate 12}}
+        <li class="col-12 col-md-6 col-lg-4">
+          {{> text-card class="mb3" }}
+        </li>
+      {{/iterate}}
+    </ul>
+  {{/iterate}}
+
+</div>
+{{> footer }}

@@ -1,0 +1,67 @@
+---
+notes: Each wizard slide can feature any number of options - just use the corresponding grid classes. When either end is reached, the corresponding arrow should be disabled using the <strong>.disabled</strong> class.
+---
+
+<div class="card w-100 flex flex-column {{#if class}}{{class}}{{/if}}">
+
+  <p class="f3 lh-title fw6 mb3 tc">{{#if wizardHeading}}{{wizardHeading}}{{else}}BB помощник{{/if}}</p>
+
+  <p>{{#if wizardDescription}}{{wizardDescription}}{{else}}Отговори на няколко бързи въпроса, за да напаснем BB-Team към твоето състояние. Ще ти отнеме само минута.{{/if}}</p>
+
+  <form class="js-wizardSlider tc f7 f6-sm fw5 lh-title mb3 relative">
+
+    <div class="w-100">
+      <p class="f5 fw6 w-100 tl pl1">Искам да:</p>
+
+      <div class="row">
+        {{> wizard-option optionLabel="Отслабна" svg="loss-wizard" optionId="lose-weight" optionName="goals" class="col-4" }}
+
+        {{> wizard-option optionLabel="Кача" svg="gains-wizard" optionId="gain-weight" optionName="goals" class="col-4" }}
+
+        {{> wizard-option optionLabel="Задържа" svg="maintain-wizard"
+        optionId="maintain-weight" optionName="goals" class="col-4" }}
+      </div>
+
+    </div>
+
+    <div class="w-100">
+      <p class="f5 fw6 w-100 tl">Аз съм:</p>
+
+      <div class="row">
+        {{> wizard-option optionLabel="Мъж" svg="male-wizard" optionId="male-gender" optionName="gender" class="col-6" }}
+
+        {{> wizard-option optionLabel="Жена" svg="female-wizard" optionId="female-gender" optionName="gender" class="col-6" }}
+      </div>
+    </div>
+
+    <div class="w-100">
+      <p class="f5 fw6 w-100 tl">Разполагам със:</p>
+
+      <div class="row">
+        {{> wizard-option optionLabel="Собствено тегло" svg="bodyweight-wizard" optionId="bodyweight" optionName="equipment" class="col-4" }}
+
+        {{> wizard-option optionLabel="Свободни тежести" svg="dumbbell-wizard" optionId="dumbbell" optionName="equipment" class="col-4" }}
+
+        {{> wizard-option optionLabel="Фитнес
+        зала" svg="gym-wizard" optionId="gym" optionName="equipment" class="col-4" }}
+      </div>
+    </div>
+
+    <div class="w-100">
+      <p class="f5 fw6 w-100 tl">Аз съм:</p>
+
+      <div class="row">
+        {{> wizard-option optionLabel="Начинаещ" svg="beginner-wizard" optionId="beginner" optionName="progress" class="col-4" }}
+
+        {{> wizard-option optionLabel="С известен опит" svg="medium-wizard" optionId="medium" optionName="progress" class="col-4" }}
+
+        {{> wizard-option optionLabel="Напреднал" svg="expert-wizard"
+        optionId="expert" optionName="progress" class="col-4" }}
+      </div>
+    </div>
+
+  </form>
+
+  {{> bottom-navigation }}
+
+</div>

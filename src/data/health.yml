@@ -1,0 +1,131 @@
+nav:
+  -
+    articles:
+      -
+        image: "http://bbteamcdn.com/content/originals/5193.jpg"
+        text: "Как да заместя кравето мляко, когато имам лактозна непоносимост или алергия към млечните протеини?"
+        title: "Заместители на млякото"
+      -
+        image: "http://bbteamcdn.com/content/originals/5152.jpg"
+        text: "Суровини, йерархия на нелегални производители и опасностите, които дебнат крайния потребител"
+        title: "Анаболни стероиди, част III гаражни производители и ъндърграунд препарати"
+        labelText: "За напреднали"
+        color: "red"
+      -
+        image: "http://bbteamcdn.com/content/originals/5147.jpg"
+        text: "Какви са основните разлики и кога е удачно да се прилагат подходите"
+        title: "Зареждащ ден и мръсен ден са две различни неща!"
+        labelText: "За жълт тест"
+        color: "yellow"
+      -
+        image: "http://bbteamcdn.com/content/originals/5137.jpg"
+        text: "Можеш ли да станеш голям без \"зоб\" и има ли безопасни стероиди?"
+        title: "Анаболни стероиди, част II митове и заблуди"
+      -
+        image: "http://bbteamcdn.com/content/originals/5128.jpg"
+        text: "Какво представляват, какво е приложението им и какви са страничните ефекти от тяхната употреба"
+        title: "Анаболни стероиди, част I действие и ефекти"
+        labelText: "За начинаещи"
+        color: "yellow"
+      -
+        image: "http://bbteamcdn.com/content/originals/5123.jpg"
+        text: "Още един плюс на многоставните движения"
+        title: "Как да подобрим динамичното си равновесие"
+    link: health-day
+    name: "Здравословен ден"
+  -
+    articles:
+      -
+        image: "http://bbteamcdn.com/content/originals/5103.jpg"
+        text: "Важността от тренирането както на квадрицепси, така и на задни бедра"
+        title: "Тренирайте не само предните, но и задните си бедра"
+      -
+        image: "http://bbteamcdn.com/content/originals/5089.jpg"
+        text: "Депресията е един от най-големите убийци на нашето време и е една от най-скъпите болести по света."
+        title: "Как да преборим депресията с хранене"
+      -
+        image: "http://bbteamcdn.com/content/originals/5099.jpg"
+        text: "Няколко пълни трансформации и изцяло споделен личен опит"
+        title: "Всичко, което научих за 15 години в преследване на “мечтаното тяло”"
+      -
+        image: "http://bbteamcdn.com/content/originals/5094.jpg"
+        text: "За лиманолечението, калолечението, спокойствието и още нещо"
+        title: "Тузлата - място с история и дух"
+    link: eating
+    name: Хранене
+  -
+    articles:
+      -
+        image: "http://bbteamcdn.com/content/originals/5068.jpg"
+        text: "Топ девет на билките"
+        title: "Дао на билките"
+      -
+        image: "http://bbteamcdn.com/content/originals/5077.jpg"
+        text: "Дали ги губим като топлина? Дали ги изхвърляме с потта?"
+        title: "Къде отиват мазнините, когато отслабваме?"
+      -
+        image: "http://bbteamcdn.com/content/originals/5083.jpg"
+        text: "Какви са причините, заради които фастингът не се отразява положително при някои жени"
+        title: "Периодичното гладуване - защо някои жени трябва да внимават с него"
+      -
+        image: "http://bbteamcdn.com/content/originals/5062.jpg"
+        text: "Как да се ориентираме, дали имаме нужда от промяна в храненето"
+        title: "13 признака, че диетата ти е пълноценна"
+    link: health-general
+    name: Здраве
+  -
+    articles:
+      -
+        image: "http://bbteamcdn.com/content/originals/1613.jpg"
+        text: "По-добре в добавка, отколкото в гозба!"
+        title: "Джинджифил (Ginger)"
+      -
+        image: "http://bbteamcdn.com/content/originals/5058.jpg"
+        text: "Защо грижите за тялото трябва да започват от грижите за съзнанието"
+        title: "Всичко е свързано"
+      -
+        image: "http://bbteamcdn.com/content/originals/881.jpg"
+        text: "Мощно оръжие в борбата срещу износването на ставите"
+        title: "Глюкозамин (Гликозамин)"
+      -
+        image: "http://bbteamcdn.com/content/originals/5049.jpg"
+        text: "Скритото оръжие на растенията"
+        title: "Силата на фитохимикалите"
+      -
+        image: "http://bbteamcdn.com/content/originals/5042.jpg"
+        text: "Съществува ли връзка между съзнанието и тялото и какво значение има тя за тренировките ни"
+        title: "Връзка мозък-мускул"
+      -
+        image: "http://bbteamcdn.com/content/originals/5034.jpg"
+        text: "Човек е на толкова години, на колкото е нервната му система"
+        title: "Нахранете мозъка си"
+    link: supplements
+    name: "Хранителни добавки"
+  -
+    articles:
+      -
+        image: "http://bbteamcdn.com/content/originals/5012.jpg"
+        text: "Как да помогнем на тялото си да функционира правилно"
+        title: "Храни, изграждащи ендокринната система"
+      -
+        image: "http://bbteamcdn.com/content/originals/5003.jpg"
+        text: "Природни средства за понижаване на \"лошия\" естроген"
+        title: "Как да се борим с естрогеновата доминантност?"
+    link: training-general
+    name: Упражнения
+  -
+    articles:
+      -
+        image: "http://bbteamcdn.com/content/originals/5000.jpg"
+        text: "Какво ми се иска да знаех, когато свалих над 30 кг"
+        title: "16 съвета за сваляне на много килограми"
+      -
+        image: "http://bbteamcdn.com/content/originals/4996.jpg"
+        text: "Модерната диета може да бъде опасна"
+        title: "Влияние на преработените храни върху имунната система"
+      -
+        image: "http://bbteamcdn.com/content/originals/4995.jpg"
+        text: "Живот под светлината на лампите... и мониторите"
+        title: "Колко време прекарвате на изкуствена светлина?"
+    link: crossfit
+    name: Кросфит

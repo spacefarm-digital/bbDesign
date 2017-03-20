@@ -1,0 +1,14 @@
+<div class="w-100-lg tc-lg z-1 relative mb3 {{#if class}}{{class}}{{/if}}">
+
+  <div class="h3 mb2">
+    <form class="overflow-x-scroll db w-screen ph2 ph3-sm ph4-lg" style="height:2000px" data-simplebar>
+      <ul class="db f5 fw6 nowrap br1 mhn1">
+        {{#iterate 6 }}
+          <li class="dib mh1 relative">
+            {{> form-dropdown class="mb3" }}
+          </li>
+        {{/iterate}}
+      </ul>
+    </form>
+  </div>
+</div>

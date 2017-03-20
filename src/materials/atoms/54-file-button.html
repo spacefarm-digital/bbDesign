@@ -1,0 +1,13 @@
+<form {{#if class}}class="{{class}}"{{/if}} class="br1 w-100 br1 mw6">
+  <label class="flex">
+    <span class="btn bg-green b-green w-100 w-auto-sm br--left-sm states-opacity">Качи файл</span>
+    <input type="file" class="clip" id="js-uploadBtn" />
+    <input value="Файл" disabled="disabled" id="js-uploadFile" class="ph2 flex-auto br--right br1 bt br bb b-grey-1 bw1 black dn db-sm" />
+  </label>
+</form>
+
+<script>
+  document.getElementById("js-uploadBtn").onchange = function () {
+    document.getElementById("js-uploadFile").value = this.value;
+  };
+</script>

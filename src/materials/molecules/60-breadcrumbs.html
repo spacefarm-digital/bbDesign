@@ -1,0 +1,20 @@
+<div class="relative {{#if class}} {{class}}{{/if}}">
+  <div class="js-breadcrumbs grey-2 f6 fw5 center overflow-x-scroll overflow-x-visible-md nowrap mw8 ph3 pt2 relative" style="height: 2.92rem" data-simplebar>
+    <ul class="flex items-center mhn1 arrows-horizontal mb3">
+      <li class="db ph1">
+        <a href="#" class="bg-fff shadow ph2 pv1 br1 black states-shadow">Знание</a>
+      </li>
+      <li class="db ph1">
+        <a href="#" class="bg-fff shadow ph2 pv1 br1 black states-shadow">Хранителни добавки</a>
+      </li>
+      <li class="db ph1">
+        <a href="#" class="bg-fff shadow ph2 pv1 br1 black states-shadow">Статии за хранителни добавки</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  var breadcrumbs = document.querySelector(".js-breadcrumbs");
+  breadcrumbs.scrollLeft = breadcrumbs.scrollWidth;
+</script>

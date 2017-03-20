@@ -1,0 +1,7 @@
+---
+notes: The width and height variables are optional and not used in most cases. Most icons simply require the class <strong>.icon</strong> for proper sizing.
+---
+
+<svg aria-hidden="true" role="img" {{#if class}}class="{{class}}"{{/if}} {{#if width}}width="{{width}}"{{/if}} {{#if height}}height="{{height}}"{{/if}} {{#if id}}id="{{id}}"{{/if}}>
+  <use xlink:href="#{{#if svg}}{{svg}}{{else}}placeholder{{/if}}"></use>
+</svg>

@@ -1,0 +1,25 @@
+---
+notes: The standard Boostrap Tour structure and classes are preserved for easier implementation. Make sure the standalone version of the plugin is used and its specific classes are scoped as neatly as possible. The arrow aspect of the plugin is not used (it't not a mobile-first pattern).
+---
+
+<div class="popover tour card mw6">
+  <a href="#" data-remodal-action="close" class="grey-2 br-100 fr states-opacity">
+    {{> icon svg="cross" width="24" height="24"}}
+  </a>
+  <h1 class="f4 lh-title mb2 popover-title">{{#if title}}{{title}}{{else}}Заглавие на стъпката{{/if}}</h1>
+  <div class="popover-content mb3">
+    {{#if content}}{{content}}{{else}}Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.{{/if}}
+  </div>
+
+  <div class="flex grey-2 justify-end mhn1 mt-auto">
+
+    <button class="js-goBack br1 states-bg mh1 disabled" aria-label="Назад" data-role="prev">
+      {{> icon svg="left-arrow" class="icon"}}
+    </button>
+
+    <button class="js-goForward br1 states-bg mh1" arial-label="Напред" data-role="next">
+      {{> icon svg="right-arrow" class="icon"}}
+    </button>
+
+  </div>
+</div>

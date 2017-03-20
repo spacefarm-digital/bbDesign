@@ -1,0 +1,31 @@
+---
+bodyClass: bg-grey-1
+---
+
+<div class="login-wrapper h-screen flex flex-column justify-center-md items-center">
+  <div class="card states-shadow tc mt0-md w-100 mw6">
+
+    {{> icon svg="logo" class="w4 h2 mb3"}}
+    <p class="f3 f2-sm fw6 mb4 lh-title">Привет отново!</p>
+
+    {{> block-button color="facebook" text="Влез с Facebook" class="mb3"}}
+
+    <p>
+      или с твоя имейл и парола
+    </p>
+
+    <form action="">
+      {{> input labelText="Имейл" placeholder="Имейл" class="mb2" }}
+      {{> input labelText="Парола" placeholder="Парола" class="mb3" }}
+      {{> form-block-button text="Влез" class="mb3" }}
+      <div class="flex-sm justify-between tl mhn1">
+        <a href="#" class="mb3 green fw6 flex-none dib mh1 states-opacity">Забравена парола</a>
+        <div class="mh1 mb3 tr-sm">
+          <p class="mb0">Нямаш акаунт?</p>
+          <a href="#" class="db green fw6 dib states-opacity">Регистрирай се</a>
+        </div>
+      </div>
+    </form>
+
+  </div>
+</div>

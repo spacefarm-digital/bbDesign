@@ -1,0 +1,59 @@
+fieldset
+{
+  position: relative;
+}
+
+.input {
+  padding: .375rem .75rem;
+  border: 2px solid $grey-1;
+  @extend .bg-white;
+  @extend .lh-copy;
+  @extend .br1;
+  @extend .fw5;
+  @extend .animation-transition;
+  -webkit-appearance: none;
+  &::placeholder {
+    @extend .animation-transition;
+  }
+  &:focus {
+    @extend .bg-fff;
+  }
+  &:focus + label {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0) translateZ(0);
+    }
+  &:focus::placeholder  {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-.5rem) translateZ(0);
+  }
+}
+
+.input + label
+{
+  position: absolute;
+  top: -2rem;
+  @extend .f6;
+  @extend .fw7;
+  @extend .green;
+  left: 0;
+  opacity: 0;
+  @extend .bg-fff;
+  @extend .shadow;
+  @extend .pv1;
+  @extend .ph2;
+  @extend .br1;
+  pointer-events: none;
+  transform: translateY(1rem) translateZ(0);
+  @extend .animation-transition;
+}
+
+// Turns off right border on larger devices
+.input-group {
+  @include sm {
+    input {
+      border-right: 0;
+    }
+  }
+}

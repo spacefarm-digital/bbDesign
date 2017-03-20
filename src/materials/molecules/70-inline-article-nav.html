@@ -1,0 +1,32 @@
+<ul class="article-nav grey-3 fw5 bg-fff br1 shadow dib relative overflow-hidden z-999 br--right-lg animation-transition {{#if class}}{{class}}{{/if}}">
+  {{#each articleNav.stuff}}
+
+  <li class="states-bg w-100 db pv1">
+    <a href="#hello" class="states-green db ph3 elipsis">{{@key}}</a>
+    <ul class="pl2">
+      {{#each this}}
+      <li>
+        <a href="#hello" class="states-green db ph3 elipsis">{{@key}}</a>
+        <ul class="pl2">
+          <li>
+            {{#each this}}
+          <li>
+            <a href="#hello" class="states-green db ph3 elipsis">{{@key}}</a></li>
+          {{/each}}
+        </ul>
+      </li>
+      {{else}}
+      {{/each}}
+    </ul>
+  </li>
+
+  {{/each}}
+  <li class="states-bg w-100 db pv1">
+    <a href="#hello" class="states-green db ph3 elipsis">Заглавие 6</a>
+    <ul class="pl2">
+      <li><a href="#hello" class="states-green db ph3 elipsis">Заглавие 6.1</a></li>
+      <li><a href="#hello" class="states-green db ph3 elipsis article-nav-active">Заглавие 6.2</a></li>
+      <li><a href="#hello" class="states-green db ph3 elipsis">Заглавие 6.3</a></li>
+    </ul>
+  </li>
+</ul>

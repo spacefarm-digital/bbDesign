@@ -1,0 +1,147 @@
+html.remodal-is-locked {
+  @extend .overflow-hidden;
+  touch-action: none;
+}
+
+/* Anti FOUC */
+
+.remodal,
+[data-remodal-id] {
+  display: none;
+}
+
+/* Necessary styles of the overlay */
+
+.remodal-overlay {
+  position: fixed;
+  @extend .top-0;
+  @extend .left-0;
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  background: rgba($black, .65);
+
+  display: none;
+}
+
+
+.remodal-wrapper {
+  @extend .fixed;
+  @extend .top-0;
+  @extend .left-0;
+  @extend .z-9999;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  overflow: auto;
+  @extend .pa2;
+}
+
+.remodal-wrapper.remodal-is-opened {
+  display: flex;
+  justify-content: center;
+}
+
+/* Fix iPad, iPhone glitches */
+
+.remodal-overlay,
+.remodal-wrapper {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Necessary styles of the modal dialog */
+
+.remodal {
+  text-size-adjust: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.remodal-is-initialized {
+  /* Disable Anti-FOUC */
+  display: block;
+}
+
+.remodal-overlay.remodal-is-opening,
+.remodal-overlay.remodal-is-closing {
+  animation-duration: .3s;
+  animation-timing-function: cubic-bezier(.5, .1, 0, 1.2);
+  animation-fill-mode: forwards;
+}
+
+.remodal-overlay.remodal-is-opening {
+  animation-name: remodal-overlay-opening-keyframes;
+}
+
+.remodal-overlay.remodal-is-closing {
+  animation-name: remodal-overlay-closing-keyframes;
+}
+
+
+.remodal.remodal-is-opening,
+.remodal.remodal-is-closing {
+  animation-duration: 0.3s;
+  animation-timing-function: cubic-bezier(.5, .1, 0, 1.2);
+  animation-fill-mode: forwards;
+}
+
+.remodal.remodal-is-opening {
+  animation-name: remodal-opening-keyframes;
+}
+
+.remodal.remodal-is-closing {
+  animation-name: remodal-closing-keyframes;
+}
+
+
+@keyframes remodal-opening-keyframes {
+  from {
+    transform: translate(-50%, 100%) rotate(-9deg) translateZ(0);
+    opacity: 0;
+    @include md {
+      transform: translate(-50%, 100%) rotate(-9deg) translateZ(0);
+      opacity: 0;
+    }
+  }
+  to {
+    transform: translate(-50%, -50%);
+
+    opacity: 1;
+  }
+}
+
+@keyframes remodal-closing-keyframes {
+  from {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: translate(-50%, 100%) rotate(-9deg) translateZ(0);
+    opacity: 0;
+    @include md {
+      transform: translate(-50%, 300%) rotate(-9deg) translateZ(0);
+      opacity: 0;
+    }
+  }
+}
+
+@keyframes remodal-overlay-opening-keyframes {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes remodal-overlay-closing-keyframes {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

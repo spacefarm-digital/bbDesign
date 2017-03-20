@@ -1,0 +1,7 @@
+---
+notes: Call with a "color" variable to change color and "text" variable to change text. Defaults to green and "Бутон".
+---
+
+<a href="#" class="btn ghost-btn dib {{#if color}}{{color}} b-{{color}} {{else}}green green b-green{{/if}} {{#if class}}{{class}}{{/if}}" {{#if attr}}{{{attr}}}{{/if}}>
+  {{#if text}}{{text}}{{else}}Кух Бутон{{/if}}
+</a>

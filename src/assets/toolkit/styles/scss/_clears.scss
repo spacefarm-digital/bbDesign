@@ -1,0 +1,37 @@
+  .cf:before,
+  .cf:after { content: " "; display: table; }
+  .cf:after { clear: both; }
+  .cf {       *zoom: 1; }
+
+  .cl { clear: left; }
+  .cr { clear: right; }
+  .cb { clear: both; }
+  .cn { clear: none; }
+
+@include sm {
+  .cl-sm { clear: left; }
+  .cr-sm { clear: right; }
+  .cb-sm { clear: both; }
+  .cn-sm { clear: none; }
+}
+
+@include md {
+  .cl-md { clear: left; }
+  .cr-md { clear: right; }
+  .cb-md { clear: both; }
+  .cn-md { clear: none; }
+}
+
+@include lg {
+  .cl-lg { clear: left; }
+  .cr-lg { clear: right; }
+  .cb-lg { clear: both; }
+  .cn-lg { clear: none; }
+}
+
+@include xl {
+  .cl-xl { clear: left; }
+  .cr-xl { clear: right; }
+  .cb-xl { clear: both; }
+  .cn-xl { clear: none; }
+}

@@ -1,0 +1,16 @@
+---
+notes: Used only within the context of a wizard.
+---
+
+<fieldset class="{{#if class}}{{class}}{{/if}} tc">
+
+  <input type="radio" id="{{#if optionId}}{{optionId}}{{else}}option{{/if}}" class="checkbox-reset" name="{{optionName}}">
+
+  <label for="{{#if optionId}}{{optionId}}{{else}}option{{/if}}" class="states-bg animation-transition pv3 br1 pointer relative db">
+
+    {{> icon width="42" height="42" class="dark-green mb2 db center"}}
+    <span>{{#if optionLabel}}{{optionLabel}}{{else}}Етикет{{/if}}</span>
+
+  </label>
+
+</fieldset>

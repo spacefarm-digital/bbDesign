@@ -1,0 +1,11 @@
+---
+notes: Change the alert type by passing a 'color' variable.
+---
+
+<div class="pa3 tc fw6 br1 shadow fw5 bw1 mw6{{#if color}} bg-light-{{color}} dark-{{color}}{{else}} bg-light-blue dark-blue{{/if}}">
+  {{#if text}}
+    <p>{{text}}</p>
+  {{else}}
+    <p class="mb0">За съжаление операцията не беше осъществена. 😭</p>
+  {{/if}}
+</div>

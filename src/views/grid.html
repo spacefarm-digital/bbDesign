@@ -1,0 +1,15 @@
+---
+fabricator: true
+---
+
+<h1 data-f-toggle="labels" class="f1 mb1 b">Grid System</h1>
+
+<p>
+  Despite being based on Flexbox, the grid is used in more or less the same way as float-based grids. The main difference between <strong>.flex</strong> and <strong>.grid</strong> is sizing. With <strong>.grid</strong> we give each column a percentage-based size.
+</p>
+
+{{#each materials.grid.items}}
+
+{{> f-item this}}
+
+{{/each}}

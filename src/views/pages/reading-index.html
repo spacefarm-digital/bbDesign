@@ -1,0 +1,23 @@
+{{> navbar class="js-nav fixed top-0"}}
+
+{{> section-nav section="Знание" class="compensate-nav"}}
+
+<div class="container">
+  {{> featured-card image="/assets/toolkit/images/brocolli.jpg" title="Можеш ли да станеш голям без зоб и има ли безопасни стероиди?"}}
+
+  {{# each health.nav }}
+    <div id="{{this.link}}" class="mb3">
+      <a href="#" class="f4 arrow mb2 fw6 db" title="Още статии на тема {{this.name}}">{{this.name}}</a>
+      <div class="row">
+        {{# each this.articles }}
+        <div class="flex col-12 col-md-6 col-xl-4">
+          {{> full-width-card title=this.articles.title image=this.image heading=this.text class="mb3" }}
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  {{/each}}
+
+</div>
+
+{{> footer }}

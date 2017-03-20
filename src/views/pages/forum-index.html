@@ -1,0 +1,27 @@
+{{> navbar class="js-nav fixed top-0"}}
+
+<div class="container compensate-nav">
+
+  {{> page-title text="Форум"}}
+  <div class="row">
+    <div class="col-12 col-lg-8 mr4-lg">
+      <div class="row mb3">
+          {{#each forum.categories}}
+          <div class="col-12 col-md-6 col-lg-12 col-xl-6 flex">
+            {{> card-with-icon title = @key content-1 = this.[0] content-2 = this.[1] content-3 = this.[2] id=this.[3] class="w-100 mb3" }}
+          </div>
+          {{/each}}
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-3">
+      <h2 class="f5 lh-title mb3">Какво става във форума?</h2>
+      {{#each forum.activity}}
+        {{> activity name=@key topic=this.topic image=this.avatar}}
+      {{/each}}
+    </div>
+  </div>
+</div>
+
+
+{{> footer }}

@@ -1,0 +1,6 @@
+---
+notes: Call with a "color" variable to change color and "text" variable to change text. Defaults to green and "Бутон".
+---
+
+<button class="btn states-opacity mw6 bg-{{#if color}}{{color}} b-{{color}}{{else}}green b-green{{/if}} {{#if class}}{{class}}{{/if}}" {{#if attr}}{{{attr}}}{{/if}}>
+{{#if text}}{{text}}{{else}}Бутон{{/if}}</button>

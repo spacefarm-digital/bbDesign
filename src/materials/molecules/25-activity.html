@@ -1,0 +1,13 @@
+<div class="flex f6 lh-title {{#if class}}{{class}}{{/if}}">
+  {{> avatar class="w2 h2 mr2" }}
+
+  <div class="f6">
+    <p class="fw4 mb0">
+      <a href="#" class="states-opacity">{{#if name}}{{name}}{{else}}Име на потребител{{/if}}</a> коментира темата
+      <a href="#" class="states-opacity">{{#if topic}}{{topic}}{{else}}Име на тема{{/if}}</a>
+    </p>
+
+    <p class="grey-3">Преди {{#if timePassed}} {{timePassed}} {{else}} 8 минути {{/if}}</p>
+  </div>
+
+</div>

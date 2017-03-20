@@ -1,0 +1,86 @@
+---
+notes: Link to the thumb version of the image in the <em>a</em> tag and to the full-resolution image in the <em>img</em> tag</a>. Include the full-resolution image's resolution in the <em>data-size</em> tag in a <strong>WidthxHeight</strong> format. Refer to <strong><a href="/docs.html#plugins">PhotoSwipe's↗</a></strong> documentation for extended info.
+---
+
+<div {{#if class}}class="{{class}}"{{/if}}>
+  <a href="#"><h1 class="arrow mb1">Снимки</h1></a>
+  <ul class="row js-gallery">
+    {{# iterate 6 }}
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-4">
+      <!-- Include thumbnail asset here -->
+      <a href="{{baseurl}}/assets/toolkit/images/ghost-image-square.svg" itemprop="contentUrl" data-size="800x800" class="db relative">
+        <!-- Include high-resolution asset here -->
+        <img src="{{baseurl}}/assets/toolkit/images/ghost-image-square.svg" itemprop="thumbnail" alt="image description" class="br1 shadow states-shadow mb3 w-100 db" />
+      </a>
+    </figure>
+    {{/iterate}}
+  </ul>
+</div>
+
+<!-- This must be included for PhotoSwipe to work -->
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+          </div>
+
+        </div>
+
+</div>

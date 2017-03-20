@@ -1,0 +1,12 @@
+<div class="mw6 center {{#if class}}{{class}}{{/if}}">
+  {{# iterate 6 }}
+    {{> comment }}
+    {{/iterate}}
+
+    <div class="card mb4">
+      <h1 class="f4 fw7 lh-title mb4 tc-md">Сподели своя коментар</h1>
+      {{> textarea placeholder="Добрият тон е задължителен" label="Коментар"}}
+      {{> checkbox text="Изпрати ми мейл с коментарите след моя" class="mb3" }}
+      {{> block-button text="Публикувай" }}
+    </div>
+</div>

@@ -1,0 +1,14 @@
+---
+fabricator: true
+---
+
+<h1 data-f-toggle="labels" class="f1 mb1 b">Flexbox examples</h1>
+<p>
+  The combination of a <strong>.flex</strong> parent and its children is used in contexts where we used to do floats. Almost any float/clear layout can be recreated with Flexbox with less pain and no need for clearfix.
+</p>
+
+{{#each materials.flexbox.items}}
+
+  {{> f-item this}}
+
+{{/each}}

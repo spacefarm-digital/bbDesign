@@ -1,0 +1,13 @@
+---
+notes: Used to upload a new avatar. The component is generally useful as an image uploader. Could be used with a solid background instead of an existing image when such isn't present.
+---
+
+<form class="uploader relative w4 h4 center mb4 tc br-100 overflow-hidden">
+  {{> avatar }}
+  <fieldset>
+    <input type="file" id="uploader-demo"/>
+    <label for="uploader-demo">
+      {{>icon svg="top-arrow" class="icon center"}}
+      Качи снимка</label>
+  </fieldset>
+</form>

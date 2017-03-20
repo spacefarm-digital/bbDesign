@@ -1,0 +1,19 @@
+---
+notes: Use this within the dashboard context only. Don't change color to indicte state - notifications should always be indicated by a red dot.
+---
+
+<div class="bg-fff shadow states-shadow br1 overflow-hidden">
+  <div class="w-100 h1 mb2 bg-{{#if cardType}}{{cardType}}{{else}}green{{/if}} mb3"></div>
+  <div class="ph3 relative">
+    <div class="flex items-top justify-between mb3 {{#if cardType}}{{cardType}}{{else}}green{{/if}}">
+      {{> icon svg=cardType class="mr2" width="42px" height="42px" }}
+      <span class="fw7 f6 grey-2">от днес</span>
+    </div>
+    <h1 class="f3 lh-title fw6 mb1">{{#if title}}{{title}}{{else}}Заглавие на карта{{/if}}</h1>
+    {{> paragraph text="Това е текстът на картата. Той не трябва да бъде твърде дълъг." class="mb4"}}
+    <div class="flex justify-end mhn1">
+      {{> ghost-button class="mb3 mh1" color=cardType }}
+      {{> button class="mb3 mh1" color=cardType }}
+    </div>
+  </div>
+</div>

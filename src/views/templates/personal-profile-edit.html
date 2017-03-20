@@ -1,0 +1,69 @@
+{{> navbar class="js-nav fixed top-0"}}
+
+<style>
+  #profile-link {
+    color: rgba(139, 197, 65, 1)!important;
+  }
+</style>
+
+<div class="container row compensate-nav">
+
+    <div class="col-12 col-md-4">
+      <div class="mr3-md sticky-md top-1-md mb3-md relative">
+        {{> upload-avatar class="db center w4 h4 mb3" }}
+        {{> input labelText="Потребителско име" value="Потребителско име" class="mb3" }}
+
+        <form class="row mb3">
+          {{> wizard-option optionLabel="Мъж" class="col-6" svg="male-wizard" optionName="gender" optionId="male" }}
+          {{> wizard-option optionLabel="Жена" class="col-6" svg="female-wizard" optionName="gender" optionId="female" }}
+        </form>
+
+        {{> input labelText="Рожденна дата" value="13/02/1992" class="mb3"}}
+        {{> textarea labelText="Описание" value="Описание. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }}
+
+        {{> block-button text="Готово" class="mb3"}}</div>
+    </div>
+
+    <div class="col-12 col-md-8">
+      <div class="mb3">
+        <a href="#"><h1 class="arrow mb1">Снимки</h1></a>
+        <div class="row">
+          <div class="col-4">
+            <a href="#"><img class="br1 shadow states-shadow mb2 w-100 db" src="{{baseurl}}/assets/toolkit/images/ghost-image-square.svg" alt="" /></a>
+          </div>
+          <div class="col-4">
+            <a href="#"><img class="br1 shadow states-shadow mb2 w-100 db" src="{{baseurl}}/assets/toolkit/images/ghost-image-square.svg" alt="" /></a>
+          </div>
+          <div class="col-4">
+            <a href="#"><img class="br1 shadow states-shadow mb2 w-100 db" src="{{baseurl}}/assets/toolkit/images/ghost-image-square.svg" alt="" /></a>
+          </div>
+          <div class="col-4">
+            <a href="#"><img class="br1 shadow states-shadow mb2 w-100 db" src="{{baseurl}}/assets/toolkit/images/ghost-image-square.svg" alt="" /></a>
+          </div>
+          <div class="col-4">
+            <a href="#"><img class="br1 shadow states-shadow mb2 w-100 db" src="{{baseurl}}/assets/toolkit/images/ghost-image-square.svg" alt="" /></a>
+          </div>
+          <div class="col-4">
+            <a href="#"><img class="br1 shadow states-shadow mb2 w-100 db" src="{{baseurl}}/assets/toolkit/images/ghost-image-square.svg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+
+      <a href="#"><h1 class="arrow mb1">Измервания</h1></a>
+      <div class="row">
+        <div class="col-4 tc">
+          <p class="f6 fw6 grey-3"><span class="db green fw6 f3">nn</span><span>кг</span></p>
+        </div>
+        <div class="col-4 tc">
+          <p class="f6 fw6 grey-3"><span class="db green fw6 f3">nnn</span><span>см</span></p>
+        </div>
+        <div class="col-4 tc">
+          <p class="f6 fw6 grey-3"><span class="db green fw6 f3">nn%</span><span>мазнини</span></p>
+        </div>
+      </div>
+    </div>
+
+
+</div>
+
+{{> footer }}

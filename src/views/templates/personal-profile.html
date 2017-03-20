@@ -1,0 +1,44 @@
+{{> navbar class="js-nav fixed top-0" }}
+
+<style>
+  #profile-link {
+    color: rgba(139, 197, 65, 1)!important;
+  }
+</style>
+
+<div class="container row compensate-nav">
+
+    <div class="col-lg-4">
+      <div class="mr3-lg sticky-lg top-1-lg mb3-lg">
+        {{> avatar class="db center w4 h4 mb3" }}
+        <p class="f3 fw6 mb1 lh-title tc">Потребителско име</p>
+        <p class="tc fw6 grey-3">
+          <span>{{> icon svg="female" class="square-icon"}}</span> • <span>възраст</span> </p>
+        <p>
+          Описание. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+
+        {{> ghost-button text="Обнови профила" class="mb3 center db w-100"}}</div>
+    </div>
+
+    <div class="col-lg-8">
+      {{> photo-gallery class="mb3"}}
+
+      <a href="#"><h1 class="arrow mb1">Измервания</h1></a>
+      <div class="row">
+        <div class="col-4 tc">
+          <p class="f6 fw6 grey-3"><span class="db green fw6 f3">nn</span><span>кг</span></p>
+        </div>
+        <div class="col-4 tc">
+          <p class="f6 fw6 grey-3"><span class="db green fw6 f3">nnn</span><span>см</span></p>
+        </div>
+        <div class="col-4 tc">
+          <p class="f6 fw6 grey-3"><span class="db green fw6 f3">nn%</span><span>мазнини</span></p>
+        </div>
+      </div>
+    </div>
+
+
+</div>
+
+{{> footer }}

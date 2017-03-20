@@ -1,0 +1,17 @@
+---
+notes: The swiper could feature different types of cards. It is not limited to prouct previews. Just change the content and add a different icon to the green button at the end. Use <strong>Simplebar</strong> for nice scrollbars on Windows.
+---
+
+<div class="swiper w-screen">
+
+  <a href="#" class="fw7 lh-solid db arrow">{{#if heading}}{{heading}}{{else}}Заглавие{{/if}}</a>
+
+  <ul class="flex overflow-x-scroll pt3 mb3" data-simplebar>
+    {{# iterate 8}}
+      <li>{{> swiper-card class="flex-none db mr3 mb3" }}</li>
+    {{/iterate}}
+
+    <li class="tc flex items-center ph4">{{> see-more-link }}</li>
+  </ul>
+
+</div>

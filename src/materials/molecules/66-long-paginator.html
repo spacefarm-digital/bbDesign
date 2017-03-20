@@ -1,0 +1,35 @@
+---
+notes: Replace <em>.grey-2</em> with <em>.green</em> and add <em>.not-allowed-sm</em> for the curently active item. Use this for paginators with five pages or more.
+---
+
+<div class="bg-fff br1 shadow states-shadow flex-md items-center justify-between mw6-sm mw7-md {{#if class}}{{class}}{{/if}}">
+
+  <!-- Jump to page -->
+  <form action="" class="mb0 flex justify-center justify-start-md ph3-md flex-auto items-center pv3 pv0-md">
+    <span class="mb0">Прескочи до:</span>
+    <fieldset class="w2 relative mh2">
+      <input type="number" class="input" id="paginator" min="1" max="36">
+      <label for="paginator">Страница</label>
+    </fieldset>
+    <span class="mb0">от 36</span>
+  </form>
+
+  <!-- Paginator -->
+  <div class="flex justify-between overflow-hidden br1 br--right-md f6 tc lh-36px">
+    <a href="#" class="pa2 pv3-sm bg-fff grey-2 states-bg fw7" title="Предишна страница">
+      {{> icon svg="left-arrow" class="icon"}}
+    </a>
+    <a href="#" class="pa2 ph3-sm pv3-sm bg-fff grey-2 states-bg fw7 dn db-sm">21</a>
+    <a href="#" class="pa2 ph3-sm pv3-sm bg-fff grey-2 states-bg fw7 dn db-sm">22</a>
+    <!-- Current -->
+    <a href="#" class="pa2 ph3-sm pv3-sm green bg-fff dib fw7 states-bg not-allowed" title="Текуща страница"><span class="dn-sm">Страница </span>23 <span class="dn-sm">от 36</span></a>
+    <a href="#" class="pa2 ph3-sm pv3-sm bg-fff grey-2 states-bg fw7 dn db-sm">24</a>
+    <a href="#" class="pa2 ph3-sm pv3-sm bg-fff grey-2 states-bg fw7 dn db-sm">25</a>
+    <a href="#" class="pa2 pv3-sm bg-fff grey-2 states-bg fw7" title="Следваща страница">
+      {{> icon svg="right-arrow" class="icon"}}
+    </a>
+
+  </div>
+
+
+</div>

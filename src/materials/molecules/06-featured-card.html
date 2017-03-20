@@ -1,0 +1,14 @@
+---
+notes: Use this as a homepage or index page feature.
+---
+
+<a href="{{#if link}}{{link}}{{else}}{{baseurl}}#{{/if}}" class="db mb3 {{class}}">
+  <div class="bg-fff relative br1 overflow-hidden shadow states-shadow">
+    <img src="{{#if image}}{{image}}{{else}}{{baseurl}}/assets/toolkit/images/ghost-image.svg{{/if}}" alt="" class="db ma0-md w-70-md fl-md" />
+
+    <div class="ph3 pt3 fl-md w-30-md">
+      <h1 class="bold fw6 lh-title f4 mb2 dib">{{#if heading}}{{heading}}{{else}}Заглавие на съдържанието{{/if}}</h1>
+      <p class="f6 fw4">{{#if text}}{{text}}{{else}}Кратко превю на съдържанието, до което води картата. Може да бъде на няколко реда, също като заглавието.{{/if}}</p>
+    </div>
+  </div>
+</a>

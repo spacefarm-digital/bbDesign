@@ -1,0 +1,7 @@
+- [jQuery↗](https://jquery.com)
+- [Remodal↗](http://vodkabears.github.io/remodal/)
+- [Flickity↗](http://flickity.metafizzy.co)
+- [Boostrap Tour↗](http://bootstraptour.com)
+- [Photoswipe↗](http://photoswipe.com)
+- [Simplebar↗](http://grsmto.github.io/simplebar/)
+- [jQuery Nice Select↗](http://hernansartorio.com/jquery-nice-select/)

@@ -1,0 +1,272 @@
+.logo {
+  font-size: 42px;
+}
+
+.button-group {
+  a:not(:first-child) {
+    margin-left: -2px;
+  }
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+  @extend .db;
+}
+
+.square-icon {
+  width: 0.7em;
+  height: 0.74em;
+}
+
+.wide-icon {
+  width: 1.11em;
+  height: 0.71em;
+}
+
+.separator {
+  li:not(:last-child) {
+    border-bottom: 1px solid $grey-1;
+  }
+}
+
+.vitamin {
+  width: 4rem;
+  height: 4rem;
+  display: block;
+  color: #fff;
+  @extend .f2;
+  text-align: center;
+  @extend .br-100;
+  line-height: 3.8rem;
+
+  h1 {
+    position: relative;
+  }
+
+  h1 span {
+    position: absolute;
+    top: 0.75rem;
+    font-size: 0.6rem;
+    font-weight: 800;
+  }
+}
+
+.lines {
+  @extend .tc;
+  @extend .relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    right: 50%;
+    display: block;
+    width: 25%;
+    height: 2px;
+    transform: translate(-28px, -50%);
+    border-radius: 2px;
+    background-color: $grey-2;
+  }
+
+  &:after {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 25%;
+    height: 2px;
+    content: '';
+    transform: translate(28px, -50%);
+    border-radius: 2px;
+    background-color: $grey-2;
+  }
+}
+
+.articleNav-active {
+  @extend .green;
+
+  &:after {
+    content: 'h';
+  }
+}
+
+.swiper {
+   > a:first-child,
+  & li:first-child {
+    margin-left: 1rem;
+  }
+}
+
+.compensate-nav {
+  padding-top: calc(152px + 1rem);
+  @include lg {
+    padding-top: calc(76px + 1rem);
+  }
+}
+
+.step-by-step {
+  counter-reset: i 0;
+  @extend .db;
+  @extend .cb;
+  @extend .relative;
+  @extend .mb3;
+  @extend .list;
+
+  li {
+    @extend .bg-fff;
+    @extend .shadow;
+    @extend .mb2;
+    @extend .pa3;
+    @extend .br1;
+
+    &:before {
+      content: counter(i);
+      counter-increment: i;
+      @extend .green;
+      @extend .f2;
+      @extend .fw6;
+      @extend .mr2;
+      @extend .lh-solid;
+    }
+  }
+}
+
+.uploader {
+  @extend .overflow-hidden;
+
+  input {
+    @extend .clip;
+  }
+
+  fieldset {
+    @extend .db;
+    @extend .ma0;
+    @extend .w-100;
+    @extend .h-100;
+    @extend .absolute;
+    background-color: rgba($green, .8);
+    @extend .fff;
+    @extend .fw5;
+    @extend .z-2;
+    left: 50%;
+    top: 50%;
+    @extend .pt4;
+    transform: translate(-50%, -50%);
+    @extend .br-100;
+    @extend .pointer;
+    @extend .states-bg;
+
+    &:hover {
+      background-color: $green;
+    }
+
+    label {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.js-fader {
+  background-color: rgba(84, 84, 89, 0.65);
+}
+
+.longform p a {
+  @extend .text-link;
+}
+
+.article-nav li {
+  position: relative;
+}
+
+.article-nav-active {
+  color: $green;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0.25rem;
+    height: 100%;
+    background-color: $green;
+  }
+}
+
+.login-wrapper {
+  @media (min-width: 23em) {
+    padding: $spacing-small $spacing-small 0;
+  }
+  @include sm {
+    padding: $spacing-medium $spacing-medium 0;
+  }
+  @include md {
+    padding: 0;
+  }
+}
+
+// Spinner animation
+$offset: 190;
+$duration: 1.25s;
+
+@keyframes rotator {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: $offset;
+  }
+
+  50% {
+    stroke-dashoffset: $offset/4;
+    transform: rotate(135deg);
+  }
+
+  100% {
+    stroke-dashoffset: $offset;
+    transform: rotate(450deg);
+  }
+}
+
+.spinner {
+  svg {
+    animation: rotator $duration linear infinite;
+    display: block;
+  }
+  circle {
+    stroke-dasharray: $offset;
+    stroke-dashoffset: 0;
+    transform-origin: center;
+    animation: dash $duration ease-in-out infinite;
+  }
+}
+
+.nested-comment {
+  position: relative;
+  overflow: hidden;
+  padding-left: 1.5rem;
+}
+
+.nested-comment:before {
+  content: '';
+  display: block;
+  background-color: $green;
+  width: $spacing-small;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

@@ -1,0 +1,63 @@
+// Text colors
+.fff { color: #fff !important }
+.grey-1 { color: $grey-1 !important }
+.grey-2 { color: $grey-2 !important }
+.grey-3 { color: $grey-3 !important }
+.black { color: $black !important }
+.midnight { color: $midnight !important }
+.green { color: $text-green !important }
+.dark-green { color: $dark-green !important }
+.highlight-green { color: $highlight-green !important }
+.red { color: $red !important }
+.yellow { color: $yellow !important }
+.blue { color: $blue !important }
+.dark-red { color: $dark-red !important }
+.dark-yellow { color: $dark-yellow !important }
+.dark-blue { color: $dark-blue !important }
+
+.facebook { color: $facebook; }
+.twitter { color: $twitter; }
+.google { color: $google; }
+.instagram { color: $instagram; }
+
+.diary { color: $diary !important }
+.habit { color: $habit !important }
+.poll { color: $poll !important }
+.document { color: $document !important }
+.photos { color: $photos !important }
+.measurements { color: $measurements !important }
+
+// Background colors
+.bgn { background-color: transparent !important }
+.bg-fff { background-color: #fff }
+.bg-white { background-color: $white }
+.bg-grey-1 { background-color: $grey-1 }
+.bg-grey-2 { background-color: $grey-2 }
+.bg-grey-3 { background-color: $grey-3 }
+.bg-black { background-color: $black }
+.bg-midnight { background-color: $midnight }
+.bg-green { background-color: $green }
+.bg-dark-green { background-color: $dark-green }
+.bg-light-green { background-color: $light-green }
+.bg-highlight-green { background-color: $highlight-green }
+.bg-red { background-color: $red }
+.bg-yellow { background-color: $yellow }
+.bg-blue { background-color: $blue; }
+.bg-light-red { background-color: $light-red }
+.bg-light-yellow { background-color: $light-yellow }
+.bg-light-blue { background-color: $light-blue; }
+.bg-dark-red { background-color: $dark-red }
+.bg-dark-yellow { background-color: $dark-yellow }
+.bg-dark-blue { background-color: $dark-blue; }
+
+.bg-facebook { background-color: $facebook; }
+.bg-twitter { background-color: $twitter; }
+.bg-google { background-color: $google; }
+.bg-instagram {background-color: $instagram;}
+
+.bg-diary { background-color: $diary; }
+.bg-habit { background-color: $habit; }
+.bg-poll { background-color: $poll; }
+.bg-document { background-color: $document; }
+.bg-photos { background-color: $photos; }
+.bg-measurements { background-color: $measurements; }

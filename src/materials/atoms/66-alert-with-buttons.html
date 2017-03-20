@@ -1,0 +1,16 @@
+---
+notes: Change the alert type by passing a 'color' variable.
+---
+
+<div class="pa3 br1 shadow fw5 bw1 mw6{{#if color}} bg-light-{{color}} {{color}}{{else}} bg-light-blue dark-blue{{/if}}">
+  <h1 class="f3 tc tl-md lh-title mb1">
+    {{#if heading}} {{title}} {{else}} Заглавие {{/if}}
+  </h1>
+  <p>
+    {{#if text}} {{text}} {{else}} Супер, току-що прочете това важно съобщение! То е малко по-дълго, за да можем да покажем за какво би трябвало да се използва този компонент. Използвайте го относително рядко. {{/if}}
+  </p>
+  <div class="flex justify-end mhn1">
+    <div class="ph1">{{> ghost-button color="dark-blue" class="w-100" }}</div>
+    <div class="ph1">{{> button color="dark-blue" class="w-100" }}</div>
+  </div>
+</div>

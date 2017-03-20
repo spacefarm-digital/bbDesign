@@ -1,0 +1,35 @@
+.v-base     { vertical-align: baseline; }
+.v-mid      { vertical-align: middle; }
+.v-top      { vertical-align: top; }
+.v-btm      { vertical-align: bottom; }
+.v-icon {
+  vertical-align: -10px;
+}
+
+@include sm {
+  .v-base-sm     { vertical-align: baseline; }
+  .v-mid-sm      { vertical-align: middle; }
+  .v-top-sm      { vertical-align: top; }
+  .v-btm-sm      { vertical-align: bottom; }
+}
+
+@include md {
+  .v-base-md     { vertical-align: baseline; }
+  .v-mid-md      { vertical-align: middle; }
+  .v-top-md      { vertical-align: top; }
+  .v-btm-md      { vertical-align: bottom; }
+}
+
+@include lg {
+  .v-base-lg     { vertical-align: baseline; }
+  .v-mid-lg      { vertical-align: middle; }
+  .v-top-lg      { vertical-align: top; }
+  .v-btm-lg      { vertical-align: bottom; }
+}
+
+@include xl {
+  .v-base-xl     { vertical-align: baseline; }
+  .v-mid-xl      { vertical-align: middle; }
+  .v-top-xl      { vertical-align: top; }
+  .v-btm-xl      { vertical-align: bottom; }
+}

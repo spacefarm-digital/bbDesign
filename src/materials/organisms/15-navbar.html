@@ -1,0 +1,128 @@
+---
+notes: Substitute .grey-3 with .green to indicate the current section.
+---
+
+<nav class="bg-fff shadow relative mb3 z-9999 w-100 animation-transition {{#if class}}{{class}}{{/if}}">
+
+  <div class="grey-3 flex flex-wrap flex-nowrap-lg justify-between items-center center">
+
+    <!-- Logo -->
+    <a href="#" class="logo pv3 db dark-green pl3 pr2 states-opacity fw7 lh-36px">
+      {{> icon svg="logo-small" width="56" height="36" class="db dn-sm"}}
+      {{> icon svg="logo" width="114" height="36" class="dn db-sm"}}
+    </a>
+
+    <!-- Cart + Profile + Search -->
+    <div class="flex order-last-lg">
+
+      <!-- Messages -->
+      <div class="relative db">
+        <a href="#" id="messages-link" class="db pa2 pv3 grey-3 states-opacity notification">
+          {{> icon svg="messages" class="icon"}}
+        </a>
+      </div>
+
+      <!-- Cart -->
+      <div class="db">
+        <a href="" id="cart-link" class="db pa2 pv3 grey-3 states-opacity">
+          {{> icon svg="checkout" class="icon"}}
+        </a>
+      </div>
+
+      <div class="relative db">
+        <a href="#" id="profile-link" class="db pa2 pv3 grey-3 states-opacity">
+          <svg class="icon">
+            <use xlink:href="#profile" />
+          </svg>
+        </a>
+
+        <ul id="profile-options" class="f5 fw5 mw5 shadow br1 tc mw5 overflow-hidden separator absolute right-0 top-3 z-2 animation-transition up-1rem">
+          {{#each dropdowns.profile}}
+            <li class="bg-fff"><a href="#" class="db pa3 states">{{ this }}</a></li>
+          {{/each}}
+        </ul>
+
+      </div>
+
+      <a href="#" id="search-link" class="db relative pl2 pr3 pv3 grey-3 states-opacity">
+
+        <!-- Search Icon -->
+        {{> icon svg="search" id="search-icon" class="icon hover-transition"}}
+
+        <!-- Close Icon -->
+        {{> icon svg="close" id="search-close" class="icon mv3 top-0 m0 top-0 scale-0 absolute hover-transition"}}
+      </a>
+
+    </div>
+
+    <div class="relative flex-auto overflow-hidden w-100 w-auto-lg">
+
+      <!-- Main Sections -->
+      <div id="sections" class="self-down animation-transition f7 f6-lg flex justify-between justify-around-lg relative">
+
+        <!-- Services -->
+        <a href="#" id="services" class="no-underline pa2 pv3-lg tc flex-auto grey-3 states-bg fw6">
+          {{> icon svg="service" class="icon db dib-lg w-36px center mb1 ma0-lg v-icon"}}
+          <span class="ml1-lg ml2-xl lh-title nowrap">Услуги</span>
+        </a>
+
+        <!-- Dashboard -->
+        <a href="#" id="dash" class="no-underline pa2 pv3-lg tc flex-auto grey-3 states-bg fw6">
+          {{> icon svg="my-bb" class="icon db dib-lg w-36px center mb1 ma0-lg v-icon"}}
+          <span class="ml1-lg ml2-xl lh-title nowrap">My-BB</span>
+        </a>
+
+        <!-- Knowledge -->
+        <a href="#" id="read" class="no-underline pa2  pv3-lg tc flex-auto grey-3 states-bg fw6">
+          {{> icon svg="reading" class="icon db dib-lg w-36px center mb1 ma0-lg v-icon"}}
+          <span class="ml1-lg ml2-xl lh-title nowrap">Знание</span>
+        </a>
+
+        <!-- Store -->
+        <a href="#" id="store-link" class="no-underline pa2 pv3-lg tc flex-auto grey-3 states-bg fw6">
+          {{> icon svg="store" class="icon db dib-lg w-36px center mb1 ma0-lg v-icon"}}
+          <span class="ml1-lg ml2-xl lh-title nowrap">Магазин</span>
+        </a>
+
+        <!-- Forum -->
+        <a href="#" id="forum-link" class="no-underline pa2  pv3-lg tc flex-auto grey-3 states-bg fw6">
+          {{> icon svg="forum" class="icon db dib-lg w-36px center mb1 ma0-lg v-icon"}}
+          <span class="ml1-lg ml2-xl lh-title nowrap">Форум</span>
+        </a>
+
+      </div>
+
+      <!-- Search -->
+      {{> search-bar class="up-self absolute left-0 w-100 bottom-0" }}
+
+    </div>
+  </div>
+</nav>
+
+<div class="js-fader fixed w-100 h-100 top-0 left-0 z-9999 fade-0"></div>
+
+<div id="cart-options" class="f5 bg-fff w-100 h-100 fw5 shadow br1 tc overflow-scroll z-9999 separator fixed right-0 animation-transition shadow states-shadow mw5 right-self">
+<div class="w-100 flex justify-end">
+  <a href="#" id="close-cart" class="grey-2 br-100 states-opacity dib mr2 mv2">
+    {{> icon svg="cross" width="24" height="24" class="db"}}
+  </a>
+</div>
+<ul>
+  {{#each dropdowns.cart}}
+    {{#each this}}
+      <li class="bg-fff">
+        <a href="#" class="pa3 states-opacity flex">
+          <div class="w4 mr2">
+            <img src="{{this.image}}" alt="" />
+          </div>
+          <div class="tl lh-title">
+            <p class="mb1 fw5 fl">{{ @key }}</p>
+            <p class="fw6 dark-green">{{this.price}}</p>
+          </div>
+        </a>
+      </li>
+    {{/each}}
+  {{/each}}
+  </ul>
+  <a href="#" class="tc db fff bg-green pa3 fw6 absolute bottom-0 right-0 w-100 states-opacity">Виж всички</a>
+</div>

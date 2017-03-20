@@ -1,0 +1,19 @@
+---
+fabricator: true
+---
+
+{{#each toolkit.colors}}
+	<h3 class="f3 mb2 lh-title bold grey-3-2">{{ @key }}</h3>
+	<div class="f-color-chips mb1">
+	{{#each this}}
+		<div class="f-color-chips-column">
+			<div class="f-color-chip" style="background: {{this}}">
+				<div class="f-color-stats">
+					<div class="f-color-chip__name">{{@key}}</div>
+					<div class="f-color-chip__color">{{this}}</div>
+				</div>
+			</div>
+		</div>
+	{{/each}}
+	</div>
+{{/each}}

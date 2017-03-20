@@ -1,0 +1,17 @@
+  .shadow { box-shadow: $card-shadow }
+
+@include sm {
+  .shadow-sm { box-shadow: $card-shadow }
+}
+
+@include md {
+  .shadow-md { box-shadow: $card-shadow }
+}
+
+@include lg {
+  .shadow-lg { box-shadow: $card-shadow }
+}
+
+@include xl {
+  .shadow-xl { box-shadow: $card-shadow }
+}

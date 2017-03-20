@@ -1,0 +1,7 @@
+---
+notes: Pass a <em>color</em> variable to switch between red, green, blue or yellow. Other background-color classes are supported as well. Pass a <em>label</em> variable to alter the text.
+---
+
+<p class="fff f6 fw7 dib ph2 br1 br--left relative bg-{{#if color}}{{color}}{{else}}yellow{{/if}} {{class}}">
+  {{#if labelText}}{{labelText}}{{else}}Етикет{{/if}}
+</p>

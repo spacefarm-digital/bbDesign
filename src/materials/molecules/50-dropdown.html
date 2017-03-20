@@ -1,0 +1,9 @@
+---
+notes: General dropdown. Could be used as a more visually pleasing replacement for standard dropdown inputs too, although this doesn't work too well on smaller screens.
+---
+
+<ul id="profile-options" class="f5 fw5 mw5 shadow br1 tc mw5 overflow-hidden separator animation-transition {{class}}">
+  {{#each dropdowns.profile}}
+    <li class="bg-fff"><a href="#" class="db pa3 pa2-lg states-bg">{{ this }}</a></li>
+  {{/each}}
+</ul>
