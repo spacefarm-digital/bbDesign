@@ -161,7 +161,7 @@ gulp.task('serve', () => {
 
 
 // default build task
-gulp.task('default', ['clean'], () => {
+gulp.task('build', ['clean'], () => {
 
   // define build tasks
   const tasks = [
