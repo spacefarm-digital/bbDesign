@@ -12,10 +12,10 @@ const runSequence = require('run-sequence');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const webpack = require('webpack');
-var svgstore = require('gulp-svgstore');
-var svgmin = require('gulp-svgmin');
-var path = require('path');
-var inject = require('gulp-inject');
+const svgstore = require('gulp-svgstore');
+const svgmin = require('gulp-svgmin');
+const path = require('path');
+const inject = require('gulp-inject');
 
 // configuration
 const config = {
@@ -69,7 +69,6 @@ gulp.task('styles:fabricator', () => {
   .pipe(sourcemaps.init())
   .pipe(sass().on('error', sass.logError))
   .pipe(prefix('last 2 versions'))
-  .pipe(gulpif(!config.dev, csso()))
   .pipe(rename('f.css'))
   .pipe(sourcemaps.write())
   .pipe(gulp.dest(config.styles.fabricator.dest))
@@ -81,10 +80,9 @@ gulp.task('styles:toolkit', () => {
   .pipe(gulpif(config.dev, sourcemaps.init()))
   .pipe(sass({
     includePaths: './node_modules',
-    outputStyle: 'compressed',
+    outputStyle: 'compressed'
   }).on('error', sass.logError))
   .pipe(prefix('last 2 versions'))
-  .pipe(gulpif(!config.dev, csso()))
   .pipe(gulpif(config.dev, sourcemaps.write('./maps')))
   .pipe(gulp.dest(config.styles.toolkit.dest))
   .pipe(gulpif(config.dev, reload({ stream: true })));
@@ -175,8 +173,7 @@ gulp.task('svgstore', function () {
         .pipe(gulp.dest('src/views/layouts/includes'));
 });
 
-
-// default build task
+// default run task
 gulp.task('default', ['clean'], () => {
 
   // define build tasks
@@ -185,7 +182,7 @@ gulp.task('default', ['clean'], () => {
     'scripts',
     'images',
     'assembler',
-    'svgstore',
+    'svgstore'
   ];
 
   // run build
