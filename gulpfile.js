@@ -159,9 +159,25 @@ gulp.task('serve', () => {
 
 });
 
+gulp.task('svgstore', function () {
+    var svgs = gulp
+        .src('src/assets/toolkit/images/*.svg')
+        .pipe(svgmin())
+        .pipe(svgstore({ inlineSvg: true }));
+
+    function fileContents (filePath, file) {
+        return file.contents.toString();
+    }
+
+    return gulp
+        .src('src/views/layouts/includes/svg.html')
+        .pipe(inject(svgs, { transform: fileContents }))
+        .pipe(gulp.dest('src/views/layouts/includes'));
+});
+
 
 // default build task
-gulp.task('build', ['clean'], () => {
+gulp.task('default', ['clean'], () => {
 
   // define build tasks
   const tasks = [
@@ -181,18 +197,20 @@ gulp.task('build', ['clean'], () => {
 
 });
 
-gulp.task('svgstore', function () {
-    var svgs = gulp
-        .src('src/assets/toolkit/images/*.svg')
-        .pipe(svgmin())
-        .pipe(svgstore({ inlineSvg: true }));
+// build task
+gulp.task('build', ['clean'], () => {
 
-    function fileContents (filePath, file) {
-        return file.contents.toString();
-    }
+  // define build tasks
+  const tasks = [
+    'styles',
+    'scripts',
+    'images',
+    'assembler',
+    'svgstore'
+  ];
 
-    return gulp
-        .src('src/views/layouts/includes/svg.html')
-        .pipe(inject(svgs, { transform: fileContents }))
-        .pipe(gulp.dest('src/views/layouts/includes'));
+  // run build
+  runSequence(tasks, () => {
+  });
+
 });
