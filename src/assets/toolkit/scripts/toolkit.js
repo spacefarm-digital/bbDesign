@@ -9,3 +9,7 @@ var smoothScroll = require('imports?$=jquery!./smoothScroll');
 var wizard = require('imports?$=jquery,Flickity=flickity!./wizard');
 var gallery = require('./gallery');
 var simpleBar = require('simplebar');
+
+// Date/time picker
+var Flatpickr = require('flatpickr');
+var dateTimePicker = require('imports?Flatpickr=flatpickr!./dateTimePicker.js');
