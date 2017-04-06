@@ -1,0 +1,51 @@
+.night-mode {
+    color: $nm-white!important;
+    background-color: $nm-black!important;
+
+    body {
+      color: $nm-white!important;
+      background-color: $nm-black!important;
+    }
+
+    .black {
+      color: $nm-white!important;
+    }
+
+    .grey-1 {
+      color: $nm-grey-2!important;
+    }
+
+    .grey-2 {
+      color: $nm-grey-2!important;
+    }
+
+    .grey-3 {
+        color: $nm-grey-1!important;
+    }
+
+    .states-bg {
+        transition: $hover-transition;
+
+        &:hover {
+            background-color: rgba($nm-grey-1, .25);
+        }
+
+        &:active {
+            background-color: rgba($nm-grey-1, .5);
+        }
+    }
+
+
+     .bg-fff {
+        background-color: $nm-grey-3!important;
+    }
+
+    .shadow {
+      box-shadow: $nm-card-shadow;
+
+      &:hover {
+      box-shadow: $nm-card-shadow-hover;
+      }
+    }
+
+}

@@ -8,6 +8,17 @@ $grey-3: rgba(156, 157, 166, 1);
 $black: rgba(60, 60, 63, 1);
 $midnight: rgba(42, 56, 84, 1);
 
+//Night mode
+$nm-white: rgba(238, 238, 243, 1);
+$nm-grey-1: rgba(211, 211, 220, 1);
+$nm-grey-2: rgba(159, 159, 166, 1);
+$nm-grey-3: rgba(62, 62, 69, 1);
+$nm-black: rgba(46, 46, 51, 1);
+$nm-pitch-black: rgba(23, 23, 25, 1);
+
+//Sepia mode
+
+
 // Brand
 $green: rgba(139, 197, 65, 1);
 $text-green: rgba(124, 186, 43, 1);
@@ -16,15 +27,15 @@ $light-green: rgba(234, 247, 218, 1);
 $highlight-green: rgba(213, 245, 171, 1);
 
 // Alerts
-$dark-red: #DC161F;
-$light-red: #FFEFEF;
+$dark-red: rgba(220, 22, 31, 1);
+$light-red: rgba(255, 239, 239, 1);
 $red: rgba(255, 97, 107, 1);
-$dark-yellow: #9E6400;
+$dark-yellow: rgba(158, 100, 0, 1);
 $yellow: rgba(255, 189, 56, 1);
-$light-yellow: #FFF7E8;
-$dark-blue: #0869D1;
+$light-yellow: rgba(255, 247, 232, 1);
+$dark-blue: rgba(8, 105, 209, 1);
 $blue: rgba(87, 167, 247, 1);
-$light-blue: #E6F0FD;
+$light-blue: rgba(230, 240, 253, 1);
 
 // Social media
 $facebook: rgba(59, 89, 152, 1);
@@ -43,6 +54,10 @@ $measurements: rgba(255, 143, 64, 1);
 // SHADOWS
 $card-shadow: 0 0 8px 0 rgba($black, .09), 0 3px 6px 0 rgba($black, .07);
 $card-shadow-hover: 0 0 10px 0 rgba($black, .13), 0 4px 8px 0 rgba($black, .09);
+
+// NIGHT SHADOWS
+$nm-card-shadow: 0 0 8px 0 rgba($nm-pitch-black, .09), 0 3px 6px 0 rgba($nm-pitch-black, .07);
+$nm-card-shadow-hover: 0 0 10px 0 rgba($nm-pitch-black, .13), 0 4px 8px 0 rgba($nm-pitch-black, .09);
 
 // TRANSITIONS
 $hover-transition: all 150ms ease;
