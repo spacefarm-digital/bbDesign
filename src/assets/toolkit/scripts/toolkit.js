@@ -13,4 +13,4 @@ var backToTopHandler = require('imports?$=jquery!./backToTop');
 
 // Date/time picker
 var Flatpickr = require('flatpickr');
-var dateTimePicker = require('imports?Flatpickr=flatpickr!./dateTimePicker.js');
+var dateTimePicker = require('imports?Flatpickr=flatpickr!./dateTimePicker.js');var a11y = require('imports?$=jquery!./a11y')
