@@ -10,7 +10,9 @@ var wizard = require('imports?$=jquery,Flickity=flickity!./wizard');
 var gallery = require('./gallery');
 var simpleBar = require('simplebar');
 var backToTopHandler = require('imports?$=jquery!./backToTop');
+var A11yDialog = require('a11y-dialog')
 
 // Date/time picker
 var Flatpickr = require('flatpickr');
 var dateTimePicker = require('imports?Flatpickr=flatpickr!./dateTimePicker.js');var a11y = require('imports?$=jquery!./a11y')
+var modals = require('imports?A11yDialog=a11y-dialog!./modals')

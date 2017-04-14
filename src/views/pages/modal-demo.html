@@ -1,5 +1,21 @@
-<div class="flex justify-center items-center h-screen">
-  <a data-remodal-target="modal" type="button" name="button" class="btn green mv5">Покажи модала</a>
+<div id="main">
+  <div class="flex justify-center items-center h-screen">
+    <!-- Trigger modal -->
+    <a type="button" class="btn green mv5 states-bg" data-a11y-dialog-show="demo-modal">Покажи модала</a>
+  </div>
 </div>
 
-{{> modal }}
+<!-- Modal enviroment -->
+<div class="modal-enviroment">
+  <!-- Modal wrapper -->
+  <div id="demo-modal" aria-hidden="true" class="modal-wrapper">
+    <!-- Dimmer -->
+    <div tabindex="-1" data-a11y-dialog-hide class="modal-dimmer"></div>
+    <!-- Actual modal -->
+    <div role="dialog" aria-labelledby="dialog-title" class="modal">
+      <div role="document">
+        {{> modal }}
+      </div>
+    </div>
+  </div>
+</div>
