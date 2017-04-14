@@ -116,3 +116,20 @@
     @extend .ml1;
   }
 }
+
+.new-content {
+  position: relative;
+  padding-right: 2.7em;
+  &::after {
+    content: '';
+    width: .7em;
+    height: .7em;
+    border-radius: 100%;
+    display: block;
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $green;
+  }
+}

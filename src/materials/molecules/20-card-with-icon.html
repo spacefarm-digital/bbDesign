@@ -2,28 +2,29 @@
 notes: A hybrid between the listing card and the large-heading card. Could be used anywhere.
 ---
 
-<div class="bg-fff shadow br1 pt2 mb2 {{class}}">
+<div class="bg-fff shadow br1 pt2 mb2 overflow-hidden {{class}}">
 
   <div class="flex items-center ph3 mb3">
 
     <div class="w3 h3 mr2">{{> icon }}</div>
 
     <a href="#" class="no-underline black">
-      <h1 class="f3 fw6 states-opacity arrow">
-          {{#if title}}
-            {{title}}
-          {{else}}
-            Категория
-          {{/if}}
-        </h1>
-      </a>
+      <h2 class="f3 fw6 states-opacity arrow">
+        {{#if title}} {{title}} {{else}} Категория {{/if}}
+      </h2>
+    </a>
 
   </div>
 
   <ul>
     {{#iterate 3}}
-    <li><a href="#" class="states-bg w-100 db ph3 pv2">Време за работа</a></li>
+      <li>
+        <a href="#" class="states-bg w-100 db ph3 pv2">Време за работа</a>
+      </li>
     {{/iterate}}
+    <li>
+      <a href="#" class="states-bg w-100 db ph3 pv2 new-content">Ново съдържание</a>
+    </li>
   </ul>
 
 </div>
