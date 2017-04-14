@@ -5,6 +5,11 @@
   height: 1px; width: 1px;
   margin: -1px; padding: 0; border: 0;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
+  // toggle-spefic focus state
+  .a11y &:focus + label::after {
+    background-color: $highlight-green;
+    opacity: .75;
+  }
 }
 
 .toggle + label {

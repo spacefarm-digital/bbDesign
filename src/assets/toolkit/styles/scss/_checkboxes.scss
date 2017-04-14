@@ -16,6 +16,11 @@
   height: 1px; width: 1px;
   margin: -1px; padding: 0; border: 0;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
+  // checkbox-spefic focus state
+  .a11y &:focus + label::before {
+    box-shadow: 0 0 0 3px $highlight-green;
+    opacity: .75;
+  }
 }
 
 .checkbox + label {

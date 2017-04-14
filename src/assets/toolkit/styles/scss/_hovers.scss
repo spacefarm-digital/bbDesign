@@ -37,3 +37,15 @@
 .states-green:hover {
   color: $green;
 }
+
+// a11y styles
+:focus {
+  outline: 0!important;
+}
+
+.a11y {
+  *:focus {
+    box-shadow: 0 0 0 3px $highlight-green;
+    opacity: .8;
+  }
+}
