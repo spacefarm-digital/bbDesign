@@ -1,6 +1,8 @@
 <a href="#" class="flex flex-wrap w5 bg-fff ph3 pt3 pb2 br1 mw6 overflow-hidden shadow states-shadow relative {{class}}">
-  {{#if labelText}}{{> label labelText=labelText class="mb2 left--1" }}{{/if}}
-    <img src="{{#if image}}{{image}}{{else}}{{baseurl}}/assets/toolkit/images/ghost-image.svg{{/if}}" alt="" class="db w-100 center mb3" />
+    {{#if labelText}}
+      {{> label labelText=labelText class="mb2 absolute top-2 right-0" }}
+    {{/if}}
+    <img src="{{#if image}}{{image}}{{else}}{{baseurl}}/assets/toolkit/images/ghost-image.svg{{/if}}" alt="" class="db w-100 mb3" />
     <h1 class="db w-100 lh-title f5 fw7 mb2 arrow">{{#if product-name}}{{product-name}}{{else}}Име на продукта{{/if}}</h1>
     {{> star-rating }}
     {{> paragraph class="wrap" text="Това е описанието на продукта. Не би трябвало да бъде много дълго, това е добра дължина."}}
