@@ -258,15 +258,15 @@ $duration: 1.25s;
   position: relative;
   overflow: hidden;
   padding-left: 1.5rem;
-}
-
-.nested-comment:before {
-  content: '';
-  display: block;
-  background-color: $green;
-  width: $spacing-small;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  &:before {
+    content: '';
+    display: block;
+    background-color: $green;
+    width: $spacing-small;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: .375rem 0 0 .375rem;
+  }
 }
