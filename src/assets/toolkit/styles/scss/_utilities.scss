@@ -119,11 +119,11 @@
 
 .new-content {
   position: relative;
-  padding-right: 2.7em;
+  padding-right: 3em;
   &::after {
     content: '';
-    width: .7em;
-    height: .7em;
+    width: 1em;
+    height: 1em;
     border-radius: 100%;
     display: block;
     position: absolute;
