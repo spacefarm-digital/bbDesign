@@ -39,6 +39,7 @@
     "eslint-config-airbnb-base": "^3.0.1",
     "eslint-plugin-import": "^1.9.2",
     "fabricator-assemble": "^1.1.11",
+    "flatpickr": "^2.5.8",
     "flickity": "^2.0.5",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
@@ -63,7 +64,6 @@
   },
   "dependencies": {
     "a11y-dialog": "^3.0.0",
-    "flatpickr": "^2.4.8",
     "simplebar": "^2.0.0-beta.3"
   }
 }
