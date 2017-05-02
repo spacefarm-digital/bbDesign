@@ -2,7 +2,7 @@
 notes: Styled form dropdowns require <a href="/docs.html#plugins">jQuery Nice Select↗</a>. It works normally in a production enviroment, but has some problems with NPM loading and dependencies, so it's included here with an instance of jQuery.
 ---
 
-<select class="js-example-basic-single">
+<select class="js-example-basic-single" style="width: 100%">
   <option data-display="Избери">Нищо</option>
   <option value="1">Дълга опция, която може да се визуализира на два реда</option>
   <option value="2">Друга опция</option>
@@ -10,15 +10,13 @@ notes: Styled form dropdowns require <a href="/docs.html#plugins">jQuery Nice Se
   <option value="4">Potato</option>
 </select>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css">
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.full.min.js"></script>
 
 
 <script>
-  $(document).ready(function() {
-  $(".js-example-basic-single").select2();
-})
+  $(".js-example-basic-single").select2({
+    width: 'resolve'
+  });
 </script>

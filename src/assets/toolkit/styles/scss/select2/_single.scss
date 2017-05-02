@@ -1,0 +1,35 @@
+.select2-selection--single {
+  box-sizing: border-box;
+
+  cursor: pointer;
+  display: block;
+
+  height: 2.375rem;
+  @extend .fw5;
+
+  user-select: none;
+  -webkit-user-select: none;
+
+  .select2-selection__rendered {
+    display: block;
+    padding-left: 1rem;
+    padding-right: 2rem;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .select2-selection__clear {
+    position: relative;
+  }
+}
+
+&[dir="rtl"] {
+  .select2-selection--single {
+    .select2-selection__rendered {
+      padding-right: 1rem;
+      padding-left: 2rem;
+    }
+  }
+}
