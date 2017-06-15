@@ -1,0 +1,21 @@
+---
+notes: Styled form dropdowns require <a href="/docs.html#plugins">jQuery Nice Select↗</a>. It works normally in a production enviroment, but has some problems with NPM loading and dependencies, so it's included here with an instance of jQuery.
+---
+<fieldset>
+  <label for="demo-multiselect" class="clip">Избери няколко:</label>
+  <select id="demo-multiselect" class="js-example-basic-multiple" style="width: 100%" multiple="multiple">
+    <option data-display="Избери">Нищо</option>
+    <option value="1">Дълга опция, която може да се визуализира на два реда</option>
+    <option value="2">Друга опция</option>
+    <option value="3" disabled>Временно неналична опция</option>
+    <option value="4">Potato</option>
+  </select>
+</fieldset>
+
+
+<script>
+  $(".js-example-basic-multiple").select2({
+    width: 'resolve',
+    placeholder: "Избери няколко",
+  });
+</script>
