@@ -1,51 +1,85 @@
 .modal-wrapper {
-  pointer-events: auto;
-  opacity: 1;
-  transition: $animation-transition;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 999;
-  display: flex;
-  justify-content: center;
-  @extend .pt3;
+	pointer-events: auto;
+	opacity: 1;
+	transition: $animation-transition;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 999;
+	display: flex;
+	justify-content: center;
+	@extend .pt3;
+	@extend .ph3;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	// Vertical center and no padding on tablets and up
+	@include md {
+		padding: 0;
+		align-items: center;
+	}
+	// Actual modal
+	.modal {
+		transition: $bouncy-transition;
+		z-index: 9999;
+		transform: translateY(0) rotate(0);
+		width: 100%;
+		max-height: 100vh;
+    position: relative;
+	}
+  // Modal invisible
+	&[aria-hidden='true'] {
+		pointer-events: none;
+		opacity: 0;
+		.modal {
+			transform: translateY(5rem) rotate(-9deg);
+		}
+	}
+	// Dimmer
+	.modal-dimmer {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 999;
+		width: 100%;
+		height: 100%;
+		background: rgba($black, .65);
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+	}
+	// Special styles for full-width iOS like panes
+	&.modal-full-width {
+		padding-left: 0!important;
+		padding-right: 0!important;
+		width: 100%;
+		&[aria-hidden='true'] {
+			.modal {
+				transform: translateY(100%) rotate(0deg);
+        @include md {
+            transform: translateY(5rem) rotate(-9deg);
+        }
+			}
+		}
+	}
+}
+.modal-nav-area {
+  @extend .flex;
+  @extend .items-center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(#fff, .8);
+  @extend .pa3;
+  @extend .relative;
+  z-index: 2;
+}
+
+.modal-scroll-area {
+  max-height: 100vh;
+  padding-top: 4.47rem;
+  margin-top: -4.47rem;
+  overflow-y: scroll;
   @extend .ph3;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  // Vertical center and no padding on tablets and up
   @include md {
-    padding: 0;
-    align-items: center;
-  }
-
-  // Actual modal
-  .modal {
-    transition: $bouncy-transition;
-    z-index: 9999;
-    transform: translateY(0) rotate(0);
-  }
-
-  // Modal visible
-  &[aria-hidden='true'] {
-    pointer-events: none;
-    opacity: 0;
-    .modal {
-      transform: translateY(5rem) rotate(-9deg);
-    }
-  }
-
-  // Dimmer
-  .modal-dimmer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    width: 100%;
-    height: 100%;
-    background: rgba($black, .65);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+    max-height: 90vh;
   }
 }
