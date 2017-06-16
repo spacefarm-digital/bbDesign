@@ -2,7 +2,8 @@
 notes: Put inside an empty white card for contrast. The card is not a part of the component but is a required environment variable.
 ---
 
-<fieldset class="mb2 w-100 mw7 {{#if class}}{{class}}{{/if}}">
-  <textarea id="{{#if ID}}{{ID}}{{else}}demo-textarea{{/if}}" name="textarea" placeholder="{{#if placeholder}}{{placeholder}}{{else}}Плейсхолдър{{/if}}" class="input w-100 h4" required>{{#if value}}{{value}}"{{/if}}</textarea>
+<fieldset class="mb2 w-100 m
+w7 relative {{#if class}}{{class}}{{/if}}">
+  <textarea id="{{#if ID}}{{ID}}{{else}}demo-textarea{{/if}}" name="{{#if ID}}{{ID}}{{else}}demo-textarea{{/if}}" placeholder="{{#if placeholder}}{{placeholder}}{{else}}Плейсхолдър{{/if}}" class="input w-100 h4" required>{{#if value}}{{value}}"{{/if}}</textarea>
   <label for="{{#if ID}}{{ID}}{{else}}demo-textarea{{/if}}">{{#if labelText}}{{labelText}}{{else}}Етикет{{/if}}</label>
 </fieldset>

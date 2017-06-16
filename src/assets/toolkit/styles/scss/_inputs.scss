@@ -57,3 +57,18 @@ fieldset
     }
   }
 }
+
+.input-with-label {
+  label {
+    position: relative;
+    display: block;
+    top: 0;
+    opacity: 1;
+    background-color: transparent;
+    padding: 0;
+    box-shadow: none;
+    font-weight: 700;
+    @extend .lh-solid;
+    margin-bottom: .75rem;
+  }
+}
