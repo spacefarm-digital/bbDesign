@@ -1,0 +1,16 @@
+<div class="flex justify-center mt2 mb3 bg-fff">
+    <div class="tc grey-3">
+        <h1 class="f2 fw7 lh-solid mb1">{{#if date}}{{date}}{{else}}31{{/if}}</h1>
+        <span class="fw7 f6">{{#if month}}{{month}}{{else}}септември{{/if}}</span>
+    </div>
+</div>
+
+<form class="pb3">
+    {{> textarea-with-visible-label placeholder="Какво хапва днес?" labelText="Хранене" labelIconColor="red" ID="textarea-food"}}
+    {{> textarea-with-visible-label placeholder="Как тренира днес?" labelText="Тренировки" ID="textarea-training"}}
+    {{> textarea-with-visible-label placeholder="Още нещо?" labelText="Бележки" ID="textarea-notes"}}
+
+    <div class="flex-sm justify-end">
+        {{> form-block-button text="Готово" attr="data-a11y-dialog-hide"}}
+    </div>
+</form>
