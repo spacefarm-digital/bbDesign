@@ -1,0 +1,28 @@
+<div>
+    <p class="f6 lh-solid mb3 db fw7">Как беше денят ти?
+    
+    <div class="flex mhn2 reaction-picker">
+    
+    	<div class="ph2">
+    	    <input id="reaction-negative-input" name="reaction" type="radio" class="checkbox-reset" />
+        	<label for="reaction-negative-input" class="tooltip tooltip--bottom {{#if class}}{{class}}{{/if}}" aria-label="Зле">
+                {{> icon svg="reaction-negative" class="icon" }}
+            </label>
+    	</div>
+    
+        <div class="ph2">
+    	    <input id="reaction-neutral-input" name="reaction" type="radio" class="checkbox-reset" />
+        	<label for="reaction-neutral-input" class="tooltip tooltip--bottom {{#if class}}{{class}}{{/if}}" aria-label="Горе-долу">
+                {{> icon svg="reaction-neutral" class="icon" }}
+            </label>
+    	</div>
+    
+        <div class="ph2">
+    	    <input id="reaction-great-input" name="reaction" type="radio" class="checkbox-reset" />
+        	<label for="reaction-great-input" class="tooltip tooltip--bottom {{#if class}}{{class}}{{/if}}" aria-label="Супер!">
+                {{> icon svg="reaction-great" class="icon" }}
+            </label>
+    	</div>
+    
+    </div>
+</div>

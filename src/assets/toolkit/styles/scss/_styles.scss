@@ -270,3 +270,23 @@ $duration: 1.25s;
     border-radius: .375rem 0 0 .375rem;
   }
 }
+
+.reaction-picker {
+  label {
+    @extend .bw;
+    @extend .hover-transition;
+    @extend .br-100;
+    svg {
+      @extend .hover-transition;
+    }
+  }
+  input:focus + label svg {
+    transform: scale(1.25);
+    z-index: 1;
+  }
+  input:checked {
+    ~label {
+      @extend .filter-reset;
+    }
+  }
+}
