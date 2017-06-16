@@ -1,18 +1,18 @@
 ---
-notes: This card represents a day in the calendar view
+notes: This card represents a day in the calendar view.
 ---
 
-<a href="#" title="Кликни, за да видиш подробности" class="db bg-fff br1 shadow overflow-hidden mw5 states-shadow">
+<a href="#" title="Кликни, за да видиш подробности" class="db bg-fff br1 shadow overflow-hidden states-shadow">
    <div class="flex justify-between items-center pa3">
        <div aria-label="Супер ден" class="flex-none db tooltip tooltip--right">
            {{> icon svg="reaction-great" class="w-36px h-36px db"}}
         </div>
-       <h3 class="f2 fw7 grey-3">31</h3>
+       <h3 class="f2 fw7 grey-3 lh-solid">{{#if date}}{{date}}{{else}}31{{/if}}</h3>
     </div>
     
-    <ul>
-        <li class="bg-light-red dark-red ph3 pv1 fw6 truncate mb1">🍎 23 пилета, 14 овце, 25 прасета, 18 пуйки</li>
-        <li class="bg-light-green dark-green ph3 pv1 fw6 truncate mb1">💪 5х5х120кг лег преса</li>
-        <li class="bg-light-yellow dark-yellow ph3 pv1 fw6 truncate">📝 Беше ок, лека умора от състезанието по-рано</li>
+    <ul class="pb2">
+        <li class="dark-red ph3 pv1 fw6 truncate pv2">🍎 23 пилета, 14 овце, 25 прасета, 18 пуйки</li>
+        <li class="dark-green ph3 fw6 truncate pv2">💪 5х5х120кг лег преса</li>
+        <li class="dark-yellow ph3 fw6 truncate pv2">📝 Беше ок, лека умора от състезанието по-рано</li>
     </ul>
 </a>
