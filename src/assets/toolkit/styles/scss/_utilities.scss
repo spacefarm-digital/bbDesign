@@ -133,3 +133,15 @@
     background-color: $green;
   }
 }
+
+.filter-reset svg {
+  filter: grayscale(0%);
+}
+
+.bw-50 svg {
+  filter: grayscale(50%);
+}
+
+.bw svg {
+  filter: grayscale(100%);
+}
