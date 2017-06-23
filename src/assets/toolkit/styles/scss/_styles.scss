@@ -290,3 +290,9 @@ $duration: 1.25s;
     }
   }
 }
+
+.wizard-option {
+  input:checked + label {
+    @extend .bg-highlight-green;
+  }
+}
