@@ -2,12 +2,8 @@
 notes: Add this at the end of any component to make it sharable. Could include more/different social media links providing there's an SVG asset and color.
 ---
 
-<div class="{{#if class}}{{class}}{{/if}}">
-  {{#if text}}
-  <p class="b lh-solid mb3">{{ text }}</p>{{/if}}
-  <div class="mhn1">
-    {{> circle-button svg="facebook" class="facebook"}}
-    {{> circle-button svg="twitter" class="twitter"}}
-    {{> circle-button svg="instagram" class="instagram"}}
-  </div>
+<div class="flex mhn1{{#if wrapperClass}} {{wrapperClass}}{{/if}}">
+  {{> circle-button svg="facebook-icon" linkClass="bg-facebook mh1"}}
+  {{> circle-button svg="twitter" linkClass="bg-twitter mh1"}}
+  {{> circle-button svg="instagram" linkClass="bg-instagram mh1"}}
 </div>

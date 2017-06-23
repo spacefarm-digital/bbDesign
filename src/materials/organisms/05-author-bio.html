@@ -4,6 +4,10 @@
   <h1 class="f3 arrow lh-title mb2"><a href="#" class="fw7">{{#if author-name}}{{ author-name }}{{else}}Име на автора{{/if}}</a></h1>
 
   {{> paragraph }}
-  {{> share-block text="Последвай {{ author-name }} в:" }}
+  
+  <div>
+    <span class="b db mb2">Последвай {{#if author-name}}{{ author-name }}{{else}}Име на автора{{/if}} в</span>
+    {{> share-block text="Последвай {{ author-name }} в:" }}
+  </div>
 
 </div>
