@@ -10,7 +10,7 @@
 
 .overflow-y-visible { overflow-y: visible; }
 .overflow-y-hidden { overflow-y: hidden; }
-.overflow-y-scroll { overflow-y: scroll; }
+.overflow-y-scroll { overflow-y: scroll; -webkit-overflow-scrolling: touch; }
 .overflow-y-auto { overflow-y: auto; }
 
 .ltr { direction: ltr; }
@@ -28,7 +28,7 @@
 
   .overflow-y-visible-sm { overflow-y: visible; }
   .overflow-y-hidden-sm { overflow-y: hidden; }
-  .overflow-y-scroll-sm { overflow-y: scroll; }
+  .overflow-y-scroll-sm { overflow-y: scroll; -webkit-overflow-scrolling: touch; }
   .overflow-y-auto-sm { overflow-y: auto; }
 }
 
@@ -45,7 +45,7 @@
 
   .overflow-y-visible-md { overflow-y: visible; }
   .overflow-y-hidden-md { overflow-y: hidden; }
-  .overflow-y-scroll-md { overflow-y: scroll; }
+  .overflow-y-scroll-md { overflow-y: scroll; -webkit-overflow-scrolling: touch; }
   .overflow-y-auto-md { overflow-y: auto; }
 }
 
@@ -62,7 +62,7 @@
 
   .overflow-y-visible-lg { overflow-y: visible; }
   .overflow-y-hidden-lg { overflow-y: hidden; }
-  .overflow-y-scroll-lg { overflow-y: scroll; }
+  .overflow-y-scroll-lg { overflow-y: scroll; -webkit-overflow-scrolling: touch; }
   .overflow-y-auto-lg { overflow-y: auto; }
 }
 
@@ -79,6 +79,6 @@
 
   .overflow-y-visible-xl { overflow-y: visible; }
   .overflow-y-hidden-xl { overflow-y: hidden; }
-  .overflow-y-scroll-xl { overflow-y: scroll; }
+  .overflow-y-scroll-xl { overflow-y: scroll; -webkit-overflow-scrolling: touch; }
   .overflow-y-auto-xl { overflow-y: auto; }
 }
