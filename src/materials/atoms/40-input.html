@@ -4,6 +4,6 @@ notes: |
 ---
 
 <fieldset class="w-100 {{#if class}}{{class}}{{/if}}">
-  <input name="name" id="{{#if ID}}{{ID}}{{else}}demo-input{{/if}}" {{#if value}}value="{{value}}"{{/if}} placeholder="{{#if placeholder}}{{placeholder}}{{else}}Плейсхолдър{{/if}}" class="input w-100" required>
+  <input name="name" id="{{#if ID}}{{ID}}{{else}}demo-input{{/if}}" {{#if value}}value="{{value}}"{{/if}} placeholder="{{#if placeholder}}{{placeholder}}{{else}}Плейсхолдър{{/if}}" class="input w-100{{#if inputClass}} {{inputClass}}{{/if}}" required>
   <label for="{{#if ID}}{{ID}}{{else}}demo-input{{/if}}">{{#if labelText}}{{labelText}}{{else}}Етикет{{/if}}</label>
 </fieldset>
