@@ -1,0 +1,35 @@
+{{> navbar class="js-nav fixed top-0" }}
+
+<!-- Container -->
+<div class="container compensate-nav">
+    {{> page-title text="Календар"}}
+    <ul class="row">
+        <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb3">
+            {{> calendar-card date="1" wrapperClass="h-100" }}
+        </li>
+        <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb3">
+            {{> calendar-card date="2" wrapperClass="h-100" }}
+        </li>
+        <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb3">
+            {{> calendar-card date="3" reaction="reaction-neutral" reactionLabel="Супер" wrapperClass="h-100" }}
+        </li>
+        <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb3">
+            {{> calendar-card date="4" reaction="reaction-great" reactionLabel="Супер" hasData=1 foodData="23 пилета, 14 овце, 25 прасета, 18 пуйки" trainingData="5х5 мъртва тяга, 5х5 клека" notesData="По-дълъг текст на бележка, който също се скъсява." wrapperClass="h-100" }}
+        </li>
+        <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb3">
+            {{> calendar-card date="5" isToday=1 wrapperClass="h-100" }}
+        </li>
+
+        <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb3">
+            {{> calendar-card date="6" wrapperClass="h-100 disabled" }}
+        </li>
+
+        <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb3">
+            {{> calendar-card date="7" wrapperClass="h-100 disabled" }}
+        </li>
+
+        <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb3">
+            {{> calendar-card date="8" wrapperClass="h-100 disabled" }}
+        </li>
+    </ul>
+</div>
