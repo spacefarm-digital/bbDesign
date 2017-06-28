@@ -15,13 +15,13 @@
 }
 
 .square-icon {
-  width: 0.7em;
-  height: 0.74em;
+  width: 1em;
+  height: 1em;
 }
 
 .wide-icon {
   width: 1.11em;
-  height: 0.71em;
+  height: 1em;
 }
 
 .separator {
@@ -294,5 +294,21 @@ $duration: 1.25s;
 .wizard-option {
   input:checked + label {
     @extend .bg-highlight-green;
+  }
+}
+
+// Make sure single and dual-digit dates align properly
+.calendar-date {
+  width: 2ch;
+  height: 2ch;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  @extend .lh-solid;
+  @extend .fw7;
+  @extend .f2;
+  @extend .grey-3;
+  &.is-today {
+    color: $text-green!important;
   }
 }
