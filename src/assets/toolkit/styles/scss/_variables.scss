@@ -17,7 +17,11 @@ $nm-black: rgba(46, 46, 51, 1);
 $nm-pitch-black: rgba(23, 23, 25, 1);
 
 //Sepia mode
-
+$sm-white: rgba(248, 245, 238, 1);
+$sm-grey-1: rgba(230, 222, 207, 1);
+$sm-grey-2: rgba(199, 189, 169, 1);
+$sm-grey-3: rgba(145, 138, 124, 1);
+$sm-black: rgba(89, 86, 79, 1);
 
 // Brand
 $green: rgba(139, 197, 65, 1);
@@ -58,6 +62,10 @@ $card-shadow-hover: 0 0 10px 0 rgba($black, .13), 0 4px 8px 0 rgba($black, .09);
 // NIGHT SHADOWS
 $nm-card-shadow: 0 0 8px 0 rgba($nm-pitch-black, .09), 0 3px 6px 0 rgba($nm-pitch-black, .07);
 $nm-card-shadow-hover: 0 0 10px 0 rgba($nm-pitch-black, .13), 0 4px 8px 0 rgba($nm-pitch-black, .09);
+
+// SEPIA SHADOWS
+$sm-card-shadow: 0 0 8px 0 rgba($sm-grey-3, .09), 0 3px 6px 0 rgba($sm-grey-3, .07);
+$sm-card-shadow-hover: 0 0 10px 0 rgba($sm-grey-3, .13), 0 4px 8px 0 rgba($sm-grey-3, .09);
 
 // TRANSITIONS
 $hover-transition: all 150ms ease;
