@@ -1,0 +1,22 @@
+---
+notes: Use this paginator to cycle through months in any sort of calendar.
+---
+
+<!-- Paginator -->
+<div class="bg-fff shadow states-shadow inline-flex justify-between overflow-hidden br1 f6 tc lh-36px mw5">
+  <!-- Previous -->
+  <a href="#" class="pa2 pv1-sm bg-fff grey-2 states-bg fw7" title="Предишен месец">
+    {{> icon svg="left-arrow" class="icon"}}
+  </a>
+
+  <!-- Current -->
+  <div href="#" class="pa2 pv1-sm green bg-fff dib fw7" title="Текуща страница">
+    {{#if month}}{{month}}{{else}}Декември{{/if}}
+  </div>
+
+  <!-- Next -->
+  <a href="#" class="pa2 pv1-sm bg-fff grey-2 states-bg fw7" title="Следващ месец">
+    {{> icon svg="right-arrow" class="icon"}}
+  </a>
+
+</div>

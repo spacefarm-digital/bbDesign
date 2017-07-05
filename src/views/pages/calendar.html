@@ -2,7 +2,16 @@
 
 <!-- Container -->
 <div class="container compensate-nav">
-    {{> page-title text="Календар"}}
+    {{> page-title text="Календар" class="tc" }}
+
+    <div class="flex justify-center mb3">
+        {{> month-paginator }}
+    </div>
+   <div class="flex justify-between">
+        <div class="w2 h2 db"></div>
+        {{> square-icon-button text="Добави" svg="forum-new-post" class="flex-none"}}
+    </div>
+    <!-- Abstract to component -->
     <ul class="row">
         <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb3">
             {{> calendar-card date="1" wrapperClass="h-100" }}
