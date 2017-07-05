@@ -26,5 +26,5 @@ tr th {
 }
 
 tbody tr:nth-child(even) {
-  background-color: lighten($grey-3, 35.5%);
+  @extend .bg-white;
 }
