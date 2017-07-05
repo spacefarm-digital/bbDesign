@@ -145,3 +145,7 @@
 .bw svg {
   filter: grayscale(100%);
 }
+
+.pointer-none {
+  pointer-events: none;
+}
