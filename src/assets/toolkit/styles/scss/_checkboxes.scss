@@ -74,6 +74,7 @@
 
 .checkbox:disabled {
   opacity: .1;
+  cursor: not-allowed;
 }
 
 .flickity-enabled {
