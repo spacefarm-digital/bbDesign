@@ -66,8 +66,8 @@
 .modal-nav-area {
   @extend .flex;
   @extend .items-center;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(#fff, .8);
+  @extend .bg-fff;
+  @extend .fade-bottom;
   @extend .pa3;
   @extend .relative;
   z-index: 2;
