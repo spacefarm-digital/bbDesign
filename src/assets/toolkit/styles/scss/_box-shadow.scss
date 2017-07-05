@@ -1,17 +1,32 @@
-  .shadow { box-shadow: $card-shadow }
+.shadow { box-shadow: $card-shadow }
+.fade-bottom {
+  box-shadow: 0 4px 8px rgba(#fff, .8);
+}
 
 @include sm {
   .shadow-sm { box-shadow: $card-shadow }
+  .fade-bottom-sm {
+    box-shadow: 0 4px 8px rgba(#fff, .8);
+  }
 }
 
 @include md {
   .shadow-md { box-shadow: $card-shadow }
+  .fade-bottom-md {
+    box-shadow: 0 4px 8px rgba(#fff, .8);
+  }
 }
 
 @include lg {
   .shadow-lg { box-shadow: $card-shadow }
+  .fade-bottom-lg {
+    box-shadow: 0 4px 8px rgba(#fff, .8);
+  }
 }
 
 @include xl {
   .shadow-xl { box-shadow: $card-shadow }
+  .fade-bottom-xl {
+    box-shadow: 0 4px 8px rgba(#fff, .8);
+  }
 }
