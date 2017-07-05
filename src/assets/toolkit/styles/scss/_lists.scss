@@ -1,56 +1,45 @@
-.list {         list-style-type: none; }
+.list {
+  list-style-type: none;
+}
 
-.ul .ul, .ol .ol {
+.ul .ul,
+.ol .ol {
   padding-left: .5rem;
 }
 
-.ul
-{
+.ul {
   margin-left: 1.5rem;
   li {
     position: relative;
   }
-  li:before
-  {
-
-      content: '●';
-
-      left: -1.5rem;
-
-      position: absolute;
-
-      color: $text-green;
+  li:before {
+    content: '●';
+    left: -1.5rem;
+    position: absolute;
+    @extend .green;
   }
 }
 
-.ol
-{
-
-    list-style: none;
-
+.ol {
+  list-style: none;
+  margin-left: calc(2ch + .5rem);
+  counter-reset: i 0;
+  ol {
     margin-left: 1rem;
-
-    counter-reset: i 0;
-    ol
-    {
-        margin-left: 1rem;
-    }
-    li {
-      position: relative;
-    }
+  }
+  li {
+    position: relative;
+  }
 }
 
-.ol li:before
-{
-    font-weight: bold;
-
-    left: -1rem;
-
-    position: absolute;
-
-    height: 100%;
-
-    content: counter(i);
-    counter-increment: i;
-    color: $text-green;
+.ol li:before {
+  font-weight: bold;
+  left: calc((2ch + .5rem)*-1);
+  position: absolute;
+  height: 100%;
+  content: counter(i);
+  counter-increment: i;
+  @extend .green;
+  width: 2ch;
+  text-align: right;
 }
