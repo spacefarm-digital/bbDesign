@@ -273,21 +273,24 @@ $duration: 1.25s;
 
 .reaction-picker {
   label {
-    @extend .bw;
     @extend .hover-transition;
     @extend .br-100;
     svg {
       @extend .hover-transition;
     }
   }
-  input:focus + label svg {
+  input:focus + label svg, input:checked + label svg {
     transform: scale(1.25);
     z-index: 1;
   }
-  input:checked {
-    ~label {
-      @extend .filter-reset;
-    }
+  input#reaction-negative-input:checked + label svg circle {
+    fill: #FF8088;
+  }
+  input#reaction-neutral-input:checked + label svg circle {
+    fill: #FFDF80;
+  }
+  input#reaction-great-input:checked + label svg circle {
+    fill: #C5E49A;
   }
 }
 
