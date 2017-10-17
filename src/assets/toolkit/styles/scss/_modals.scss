@@ -78,6 +78,7 @@
   padding-top: 4.47rem;
   margin-top: -4.47rem;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   @extend .ph3;
   @include md {
     max-height: 90vh;
